@@ -163,5 +163,9 @@ footer{
     header,body,footer{
         height: fit-content;
     }
+
+    p{
+        margin: 10px;
+    }
     
 }
