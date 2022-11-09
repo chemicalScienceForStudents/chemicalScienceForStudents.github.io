@@ -1,8 +1,14 @@
+/*colors*/
+
+:root{
+    --midnight-blue: #001533;
+    --sulu-green: #c5f284;
+}
 
 body{
     width: 100vw;
     height: 100vh;
-    background:linear-gradient(45deg,#001533,#005c80,#00a2cc);
+    background:linear-gradient(45deg,var(--midnight-blue),#005c80,#00a2cc);
     background-size: 200%;
     animation: backgroundAnimation;
     animation-duration: 3.5s;
@@ -16,6 +22,26 @@ body{
     color: white;
 }
 
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    height: 30vh;
+    flex-direction: column;
+}
+
+main {
+    height: 60vh;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+article{
+    width: 50%;
+}
 
 @keyframes backgroundAnimation {
     0% {
@@ -33,9 +59,17 @@ body{
 h1{
     margin: 0;
     font-weight: 300;
+    color: var(--sulu-green);
+    text-shadow: 1px 1px 1px grey;
 }
 
 h2{
+    margin: 0;
+    font-weight: 200;
+    text-shadow: 0px 0px 2.5px white;
+}
+
+h3{
     margin: 0;
     font-weight: 200;
 }
@@ -44,8 +78,27 @@ p{
     font-weight: 200;
 }
 
+.app-logo{
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px 0px var(--midnight-blue);
+    cursor: pointer;
+    transition-duration: 0.35s;
+    width: 50%;
+}
+
+.app-logo:hover{
+    box-shadow: 0px 0px 5px 0px white;
+}
+
+.img-comming-soon{
+    cursor: pointer;
+    transition-duration: 0.35s;
+    width: 50%;
+}
+
 
 footer{
+    height: 10vh;
     margin: 0;
     padding: 0;
     font-weight: 200;
