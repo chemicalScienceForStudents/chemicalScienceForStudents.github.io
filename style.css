@@ -98,9 +98,10 @@ p{
 
 
 footer{
+    box-sizing: border-box;
     height: 10vh;
     margin: 0;
-    padding: 0;
+    padding: 15px;
     font-weight: 200;
 }
 
@@ -151,4 +152,16 @@ footer{
     .fluid-font-paragraph{
         font-size: 40px
     }
+}
+
+@media(max-height:420px) and (orientation:landscape){
+
+    body{
+        height:100%
+    }
+
+    header,body,footer{
+        height: fit-content;
+    }
+    
 }
