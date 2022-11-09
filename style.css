@@ -1,0 +1,101 @@
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(45deg,#001533,#005c80,#00a2cc);
+    background-size: 200%;
+    animation: backgroundAnimation;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+
+@keyframes backgroundAnimation {
+    0% {
+        background-size: 200%;
+    }
+    50% {
+        background-size: 100%; 
+    }
+    100% {
+        background-size: 250%;
+    }
+    
+}
+
+h1{
+    margin: 0;
+    font-weight: 300;
+}
+
+h2{
+    margin: 0;
+    font-weight: 200;
+}
+
+p{
+    font-weight: 200;
+}
+
+
+footer{
+    margin: 0;
+    padding: 0;
+    font-weight: 200;
+}
+
+/*******Responsive text*********/
+
+/* sintax  linear responsive text [min font size + (max font size - min font size) * ((viewport width - min viewport width) / (max viewport width - min viewport width))] */
+
+.fluid-font-title{
+    font-size: 60px
+}
+
+.fluid-font-subtitle{
+    font-size: 40px
+}
+
+.fluid-font-paragraph{
+    font-size: 20px
+}
+
+/* Scren with a width equal or bigger than 320px  */
+@media screen and (min-width: 320px) {
+    
+    .fluid-font-title{
+        font-size: calc(60px + 100 * ((100vw - 320px) / 1600)) ;
+    }
+
+    .fluid-font-subtitle{
+        font-size: calc(40px + 60 * ((100vw - 320px) / 1600)) ;
+    }
+
+    .fluid-font-paragraph{
+        font-size: calc(20px + 20 * ((100vw - 320px) / 1600)) ;
+    }
+
+}
+
+/* Scren with a width equal or bigger than 1920px  */
+@media screen and (min-width: 1920px) {
+
+    .fluid-font-title{
+        font-size: 140px
+    }
+
+    .fluid-font-subtitle{
+        font-size: 100px
+    }
+
+    .fluid-font-paragraph{
+        font-size: 40px
+    }
+}
