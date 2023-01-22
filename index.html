@@ -10,6 +10,26 @@
 </head>
 
 <body>
+
+
+    <!-- navigation bar -->
+    <nav id="navbar" class="navbar-container flex-container transition">
+        <a href=""><img src="./media/logo.png" title="logo image" class="logo-image" width="191.5" height="25.5" ></a>
+        <ul id="sectionsContainer" class="list-sections-container transition">
+            <li><a id="inicio" href="" class="section-link fluid-font-section-link current-section" >Inicio</a></li>
+                <li><a href="" class="section-link fluid-font-section-link" >Mi Acerca de nosotros</a></li>
+                <li><a href="" class="section-link fluid-font-section-link" >Únete a nosotros</a></li>
+        
+            </ul>
+        <button id="sectionMenuButton" class="burger-menu-button hidden" name="burger-menu" @click="openCloseMenu('sectionsMenu')" aria-label="burger-menu-button">
+            <canvas class="burger-bar" width="45" height="4"></canvas>
+            <canvas class="burger-bar line-medium" width="45" height="4"></canvas>
+            <canvas class="burger-bar" width="45" height="4"></canvas>
+        </button>
+    </nav>
+
+
+
     <header class="flex-container">
         <br><br>
         <h1 class="fluid-font-title">

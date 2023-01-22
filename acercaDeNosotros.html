@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <title>CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!-- navigation bar -->
+    <nav id="navbar" class="navbar-container flex-container transition">
+        <a href=""><img src="./media/logo.png" title="logo image" class="logo-image" width="191.5" height="25.5" ></a>
+        <ul id="sectionsContainer" class="list-sections-container transition">
+            <li><a id="inicio" href="./index.html" class="section-link fluid-font-section-link" >Inicio</a></li>
+            <li><a href="./acercaDeNosotros.html" class="section-link fluid-font-section-link current-section" >Acerca de nosotros</a></li>
+            <li><a href="" class="section-link fluid-font-section-link" >Únete a nosotros</a></li>
+        
+            </ul>
+        <button id="sectionMenuButton" class="burger-menu-button hidden" name="burger-menu" @click="openCloseMenu('sectionsMenu')" aria-label="burger-menu-button">
+            <canvas class="burger-bar" width="45" height="4"></canvas>
+            <canvas class="burger-bar line-medium" width="45" height="4"></canvas>
+            <canvas class="burger-bar" width="45" height="4"></canvas>
+        </button>
+    </nav>
+
+
+<main class="about-us-container">
+    
+    <section>
+        <h1 class="fluid-font-subtitle tutorial-title color-white">¿Por qué se creó ESS?</h1>
+        <p class="fluid-font-paragraph paragraph-text tutorial-banner-text">Nuestro objetivo es apoyar a más estudiantes en su formación académica y también generar un producto de clase mundial, con el sello de garantía de nuestra honorable casa de estudios.</p><br>
+        <p class="fluid-font-paragraph paragraph-text tutorial-banner-text">La suite ESS incluye una amigable funcionalidad con la que el profesor puede construir nuevos ejercicios, acoplándose a las necesidades pedagógicas de sus diferentes cursos gracias a su versatilidad, que la caracteriza como una poderosa herramienta de enseñanza, fungiendo como puente entre el mundo digital y la química cuántica moderna, con la que los universitarios despertarán su curiosidad.</p>
+    </section>
+
+    <section class="flex-container">
+        <article>
+            <h1 class="fluid-font-subtitle tutorial-title color-white">¿Por qué elegir ESS?</h1>
+            <p class="fluid-font-paragraph paragraph-text tutorial-banner-text">Los algoritmos que constituyen a ESS permiten que la App sea funcional, incluso en dispositivos móviles con capacidades moderadas.</p> <br>
+            <p class="fluid-font-paragraph paragraph-text tutorial-banner-text">Especies químicas de gran tamaño pueden ser también estudiadas desde la App ESS con ayuda de nuestro convertidor de archivos, el cual permite incorporar información de estructura electrónica de átomos y moléculas, previamente calculada con los paquetes computacionales de química cuántica más populares (Gaussian, NWChem, Orca), al ambiente móvil de ESS.</p>
+        </article>
+        <img src="./media/porQueUsarESS.png" title="section 2 image" class="section-image png-image-shadow portrait-image" >
+    </section>
+
+    <section class="flex-container">
+        <article>
+            <h1 class="fluid-font-subtitle tutorial-title color-white">Misión</h1>
+            <p class="fluid-font-paragraph paragraph-text tutorial-banner-text">Desarrollar un producto multimedia ejecutable en dispositivos móviles, que permita resolver problemas de naturaleza química desde un punto de vista fundamental, con particular énfasis en los correspondientes a los conceptos abordados en asignaturas relacionadascon la estructura de la materia.</p>
+        </article>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <article>
+            <h1 class="fluid-font-subtitle tutorial-title color-white">Visión</h1>
+            <p class="fluid-font-paragraph paragraph-text tutorial-banner-text">Llevar nuevas tecnologías digitales a las aulas universitarias de química, orientadas a contribuir y modernizar sustancialmente al proceso de enseñanza y aprendizaje, mejorando así la calidad de la formación que reciben los egresados de las licenciaturas de la química que se imparten en nuestra universidad.</p>
+        </article>
+    </section>
+
+    <section>
+        <h1 class="fluid-font-subtitle tutorial-title color-white">Equipo de desarrollo</h1>
+        <p class="fluid-font-paragraph paragraph-text tutorial-banner-text">ESS se encuentra en continuo desarrollo por el grupo de investigación del Dr. Marco Antonio Franco de la Facultad de Química de la UNAM</p><br>
+        <img src="./media/essTeam.jpg" title="equipo ess" class="ess-image transition" >
+    </section>
+
+
+
+
+</main>
+
+<footer class="flex-container">
+    copyright @ CSS 2022
+</footer>
+
+</body>
+
+</html>
