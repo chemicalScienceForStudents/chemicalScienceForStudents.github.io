@@ -1,69 +1,72 @@
 <!DOCTYPE html>
-<head>
+    <head>
+    <!-- Meta information -->
     <title>CSS</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="cssTeam">
+    <meta name="description" content="This is the products for Chemical Science for Students">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="./media/icon.png" >
+    <meta name="theme-color" content="#15161C"/>
+    <!-- load styles and inmediate resources -->
+    <link type="text/css" rel="stylesheet" href="./style.css">   
+    <!-- Preconnet files -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    </head>
 
-</head>
+    <body>
+        <nav class="navbar-container flex-container">
 
-<body>
+            <p class="eslogan display-in-desktop">Chemical Science For Students</p>
+            <p class="eslogan display-in-mobile">CSS</p>
 
+            <section class="section-container flex-container">
+                <li class="section-link"><a class="link" href="./index.html">INICIO</a></li>
+                <li class="section-link"><a class="link" href="./index.html">QUIÉNES SOMOS</a></li>
+                <li class="section-link"><a class="link" href="./index.html">ÚNETE A CSS</a></li>
+                <li class="section-link"><a class="link" href="./index.html">CONTACTO</a></li>
+            </section>
 
-    <!-- navigation bar -->
-    <nav id="navbar" class="navbar-container flex-container transition">
-        <a href=""><img src="./media/logo.png" title="logo image" class="logo-image" width="191.5" height="25.5" ></a>
-        <ul id="sectionsContainer" class="list-sections-container transition">
-            <li><a id="inicio" href="" class="section-link fluid-font-section-link current-section" >Inicio</a></li>
-                <li><a href="" class="section-link fluid-font-section-link" >Mi Acerca de nosotros</a></li>
-                <li><a href="" class="section-link fluid-font-section-link" >Únete a nosotros</a></li>
-        
-            </ul>
-        <button id="sectionMenuButton" class="burger-menu-button hidden" name="burger-menu" @click="openCloseMenu('sectionsMenu')" aria-label="burger-menu-button">
-            <canvas class="burger-bar" width="45" height="4"></canvas>
-            <canvas class="burger-bar line-medium" width="45" height="4"></canvas>
-            <canvas class="burger-bar" width="45" height="4"></canvas>
-        </button>
-    </nav>
+        </nav>
 
+        <main class="main-container flex-container">
 
-
-    <header class="flex-container">
-        <br><br>
-        <h1 class="fluid-font-title">
-            CSS
-        </h1>
-        <h2 class="fluid-font-subtitle">Chemical Science for Students</h2>
-    </header>
-    <main class="flex-container">
-        <p class="fluid-font-paragraph">
-            Nuestros productos 
-        </p>
-        <section class="flex-container">
-            <article>
-                <p class="fluid-font-paragraph">
-                    <i>ESS</i>
-                </p>
-                <a href="https://electronicstructureforstudents.tk/" target="_blank">
-                    <img class="app-logo" src="./media/logoESS.png" title="Logo de ESS" >
-                </a>
-            </article>
-            <article>
-                <p class="fluid-font-paragraph">
-                    <i>Fennex</i>
-                </p>
-                <h2>Proximamente</h2>
-            </article>
+            <br>
+            <h2 class="title-css">CSS</h2>
+            
+            <h1 class="title-eslogan">Chemical Science for Students</h1>
+            <br><br>
+            <h3 class="title-products">NUESTROS PRODUCTOS</h3>
     
-        </section>
-        <br><br>
-    </main>
-    <footer class="flex-container">
-        copyright @ CSS 2022
-    </footer>
+            <section class="flex-container">
+                <a href="https://electronicstructureforstudents.tk/" target="_blank">
+                    <figure>
+                        <img class="img-product" src="./media/logoESS.png" alt="Logo de ESS">
+                        <figcaption class="img-capture">ESS</figcaption>
+                    </figure>
+                </a>
+                
 
-</body>
+                <a href="">
+                        <figure>
+                        <img class="img-product" src="./media/logoFENNEX.png" alt="Logo de FENNEX">
+                        <figcaption  class="img-capture">FENNEX</figcaption>
+                    </figure>
+                </a>
+            </section>
+            <br><br>
+
+
+            <footer>copyright @ Chemical Science for Students 2023</footer>
+
+        </main>
+
+
+
+
+    </body>
+
+
 
 </html>
