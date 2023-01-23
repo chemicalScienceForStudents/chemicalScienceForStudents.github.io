@@ -29,6 +29,19 @@ a{
     color: white;
 }
 
+p{
+    text-align: justify;
+    font-size: 20px;
+}
+
+.overflow{
+    overflow-x: auto;
+}
+
+section.overflow{
+    justify-content: space-between;
+}
+
 .flex-container{
     display: flex;
     align-items: center;
@@ -46,29 +59,31 @@ a{
 /*Navbar*/
 /*******/
 
+.navbar-container{
+    background: var(--black-russian);
+    justify-content: space-between;
+    height: 43px;
+    position:sticky;
+    top: 0;
+    border-bottom: 2px solid var(--portage);
+    padding-top: 5px;
+    box-shadow: 1px 1px 15px #00000050;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+}
+
 .eslogan{
     padding: 0 10px;
+    white-space: nowrap;
 }
 
-.navbar-container{
-    background-color: var(--black-russian);
-    height: 45px;
-    list-style: none;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 5px;
-    border-bottom: 2px solid var(--portage);
-    box-shadow: 0px 5px 10px darkgrey;
-    box-sizing: border-box;
-}
-
-.section-container{
-    overflow-y: hidden;
-    overflow-x: auto;
-
-}
-
-.section-link{
+.current-section{
+    text-decoration: underline;
+    text-decoration-color: var(--portage);
+    text-decoration-thickness: 2.5px;
 }
 
 .link{
@@ -81,7 +96,7 @@ a{
 .link:hover{
     transition: 0.25s;
     transform: translateY(-5px);
-    text-shadow: 1px 1px 5px white;
+    text-shadow: 1px 1px 3px #959CE8;
 }
 
 
@@ -89,17 +104,22 @@ a{
 /*Main content*/
 /*************/
 
-.main-container{
+
+main{
+    padding: 20px;
     background-image: url(./media/fondoCSS.png);
-    height: calc(100vh - 45px);
-    flex-direction: column;
-    justify-content: space-evenly;
     background-size: 150%;
     background-position: 0;
     animation-name: background-animation;
-    animation-duration: 15s;
+    animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+}
+
+.main-container{
+    height: calc(100vh - 90px);
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 @keyframes background-animation{
@@ -149,16 +169,32 @@ figure:hover > img{
     padding: 5px 0;
     font-size: 20px;
     font-weight: 300;
-
+    white-space: nowrap;
 }
 
+
+::-webkit-scrollbar{
+    height: 3px;
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--black-russian); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--portage); 
+  border-radius: 10px;
+}
 
 
 
 /*Mobile media queries*/
 
 
-@media (max-width: 412px) and (max-height: 916px) {
+@media (max-width: 414px) and (max-height: 916px) {
 
     .display-in-mobile{
         display: block;
@@ -168,16 +204,70 @@ figure:hover > img{
         display: none;
     }
 
-    .main-container{
+    .main-container,main{
         background-size: cover;
     }
 
 }
 
-@media (max-width: 916px) and (max-height: 412px) and (orientation:landscape) {
+@media (max-width: 916px) and (max-height: 414px) and (orientation:landscape) {
 
     .main-container{
         height: auto;
     }
 
+    main{
+        background-size: cover;
+    }
+
+
+}
+
+label{
+    font-size: 20px;
+}
+
+input{
+    border: 3px solid transparent;
+    border-radius: 15px;
+    margin: 5px;
+    outline: none;
+    padding: 8px 5px 5px 5px;
+    text-align: center;
+    transition-duration: .35s;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 20px;
+    width: 50vw;
+}
+
+textarea{
+    font-size: 20px;
+    outline: none;
+    resize: none;
+    overflow-y: auto;
+    height: 150px;
+    border-radius: 10px;
+    padding: 10px 5px;
+    border: 3px solid transparent;
+    box-sizing: border-box;
+    width: 60vw;
+    font-family: 'Tajawal', sans-serif; 
+}
+
+button {
+    background-color: var(--black-russian);
+    border-radius: 25px;
+    border: 2px solid var(--portage);
+    color: var(--midnight-blue);
+    margin: auto;
+    padding: 15px 25px;
+    cursor: pointer;
+    display: block;
+    outline: none;
+    transition-duration: 0.35s;
+}
+
+button:hover{
+    transition-timing-function: ease-in-out;
+    box-shadow:1px 1px 10px 1px gray;
 }

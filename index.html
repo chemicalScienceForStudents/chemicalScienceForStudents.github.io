@@ -6,8 +6,12 @@
     <meta name="author" content="cssTeam">
     <meta name="description" content="This is the products for Chemical Science for Students">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./media/icon.png" >
-    <meta name="theme-color" content="#15161C"/>
+    <meta name="theme-color" content="#001533"/>
+    <!-- <link rel="icon" href="./media/icon.png" >  -->
+    <!-- prefetch images for expeciences -->
+    <link rel="prefetch" href="./media/logoESS.png" >
+    <link rel="prefetch" href="./media/logoFENNEX.png" >
+    <link rel="prefetch" href="./media/lowSizeFondoCSS.png" >
     <!-- load styles and inmediate resources -->
     <link type="text/css" rel="stylesheet" href="./style.css">   
     <!-- Preconnet files -->
@@ -17,18 +21,17 @@
 
     <body>
         <nav class="navbar-container flex-container">
-
-            <p class="eslogan display-in-desktop">Chemical Science For Students</p>
-            <p class="eslogan display-in-mobile">CSS</p>
-
-            <section class="section-container flex-container">
-                <li class="section-link"><a class="link" href="./index.html">INICIO</a></li>
-                <li class="section-link"><a class="link" href="./index.html">QUIÉNES SOMOS</a></li>
-                <li class="section-link"><a class="link" href="./index.html">ÚNETE A CSS</a></li>
-                <li class="section-link"><a class="link" href="./index.html">CONTACTO</a></li>
-            </section>
-
-        </nav>
+            <span class="eslogan display-in-desktop">Chemical Science For Students</span>
+            <span class="eslogan display-in-mobile">CSS</span>
+        
+            <ul class="flex-container overflow">
+                <li class="section-link"><a class="link current-section" href="./index.html">INICIO</a></li>
+                <li class="section-link"><a class="link" href="./quienesSomos.html">QUIÉNES SOMOS</a></li>
+                <li class="section-link"><a class="link" href="./uneteANosotros.html">ÚNETE A CSS</a></li>
+                <li class="section-link"><a class="link" href="./contacto.html">CONTACTO</a></li>
+            </ul>
+            
+        </nav> 
 
         <main class="main-container flex-container">
 
@@ -48,7 +51,7 @@
                 </a>
                 
 
-                <a href="">
+                <a href="#">
                         <figure>
                         <img class="img-product" src="./media/logoFENNEX.png" alt="Logo de FENNEX">
                         <figcaption  class="img-capture">FENNEX</figcaption>
