@@ -104,8 +104,7 @@ nav ul{
 /*Main content*/
 /*************/
 
-
-main{
+.main-container{
     padding: 20px;
     background-image: url(./media/fondoCSS.png);
     background-size: 150%;
@@ -114,13 +113,16 @@ main{
     animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    height: calc(100vh - 90px);
+    overflow: hidden auto;
+    background-size: 150%;
 }
 
-.main-container{
-    height: calc(100vh - 90px);
+.flex-column{
     flex-direction: column;
     justify-content: space-evenly;
 }
+
 
 @keyframes background-animation{
     0%{
@@ -204,22 +206,18 @@ figure:hover > img{
         display: none;
     }
 
-    .main-container,main{
-        background-size: cover;
+    .main-container{
+        background-size: auto 100vh;
     }
 
 }
 
 @media (max-width: 916px) and (max-height: 414px) and (orientation:landscape) {
 
-    .main-container{
-        height: auto;
+    .flex-column{
+        justify-content:flex-start;
     }
-
-    main{
-        background-size: cover;
-    }
-
+   
 
 }
 
