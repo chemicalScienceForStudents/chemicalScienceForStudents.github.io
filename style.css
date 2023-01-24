@@ -106,7 +106,7 @@ nav ul{
 
 .main-container{
     padding: 20px;
-    background-image: url(./media/fondoCSS.png);
+    background-image: url(./media/fondoCSSlow.png);
     background-size: 150%;
     background-position: 0;
     animation-name: background-animation;
