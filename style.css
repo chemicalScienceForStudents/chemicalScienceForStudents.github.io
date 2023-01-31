@@ -59,6 +59,19 @@ section.overflow{
 /*Navbar*/
 /*******/
 
+.logo-container{
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+
+.logo{
+    height: 35px;
+}
+
+.logo-container:hover{
+    filter: drop-shadow(0px 0px 1px white);
+}
+
 .navbar-container{
     background: var(--black-russian);
     justify-content: space-between;
@@ -73,11 +86,6 @@ section.overflow{
 nav ul{
     list-style: none;
     margin: 0;
-}
-
-.eslogan{
-    padding: 0 10px;
-    white-space: nowrap;
 }
 
 .current-section{
