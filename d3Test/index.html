@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <head>
     <!-- Meta information -->
-    <title>D3 test</title>
+    <title>D3 test 1.1</title>
     <meta charset="UTF-8">
     <meta name="author" content="cssTeam">
     <meta name="description" content="This is the products for Chemical Science for Students">
@@ -11,30 +11,61 @@
     <!-- load styles and inmediate resources -->
     <link type="text/css" rel="stylesheet" href="./style.css">   
     <!-- Preconnet files -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700&display=swap" rel="stylesheet">
-    </head>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
 
     <body>
-        <main>
-            <h1>Curva de titulación test 1.0</h1>
 
-            <h2>El error del desarrollo</h2>
-            <img src="./media/errorCaballo.jpeg" width="100%">
+         <!-- Barra de navegación -->
+        <nav class="navbar flex-container">
+            <img class="logo-img" src="./media/fennexLogo.svg">
+            <ul class="navbar-list">
+                <li><a class="link">Demo</a></li>
+                <li><a class="link">CSS</a></li>
+            </ul>
+        </nav>
+        <main class="main-container flex-container">
+            
+            <!-- Gráfica curva de titulación -->
+            <div class="div-container flex-container" id="grafica"></div>
 
-            <h2>El nuevo planteamineto de desarrollo</h2>
-            <h3><u>De lo funcional y simple a lo complejo y atractivo</u></h3>
-            <img src="./media/errorCaballo2.jpeg" width="100%">
-
-
-            <h2>Curva de titulación HCl con NaOH 0.1M</h2>
-
-            <button onclick="createTitulation(5,11)">5 ml de incremento</button>
-            <button onclick="createTitulation(1,55)">1 ml de incremento</button>
-            <div id="grafica"></div>
-
+             <!-- Barra de ajustes -->
+            <aside>
+                <h3 class="subtitle"><i class="fa-solid fa-flask"></i> AJUSTES</h3>
+                <h4>Datos</h4>
+                <input id="inputBasisConcentration" placeholder="Concentración titulante">
+                <input id="inputAcidConcentration" placeholder="Concentración analito">
+                <input id="inputPoints" placeholder="Número de puntos">
+                <h4>Titulante</h4>
+                <input list="titulantes">
+                    <datalist id="titulantes">
+                        <option value="" disabled selected hidden>Selecciona tu titulante</option>
+                        <option value="NaOH">NaOH</option>
+                    </datalist>
+                <h4>Analito</h4>
+                <input list="analitos">
+                    <datalist id="analitos">
+                        <option value="" disabled selected hidden>Selecciona tu analito</option>
+                        <option value="HCl">HCl</option>
+                    </datalist>
+                    <br>
+                <button onclick="createTitulation()">Titular!</button>
+            </aside>
 
         </main>
+
+         <!-- Footer -->
+         <footer class="flex-container">
+            <p>Copyright ©2023 CSS</p>
+            <section class="flex-container">
+                <a class="social-media flex-container"><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="social-media flex-container"><i class="fa-brands fa-instagram"></i></a>
+                <a class="social-media flex-container"><i class="fa-brands fa-youtube"></i></a>
+                <a class="social-media flex-container"><i class="fa-brands fa-tiktok"></i></a>
+            </section>
+         </footer>
 
     
 
@@ -45,6 +76,8 @@
 
     <script src="d3.js" type="text/javascript" defer></script>
     <script type="text/javascript" src="./app.js" defer></script>
+    <script src="./fontAsome.min.js" type="text/javascript" defer></script>
+
 
 
 </html>
