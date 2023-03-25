@@ -79,9 +79,11 @@ function createGraph(data,maxVolume) {
      let width = grafica.offsetWidth
      let height = grafica.offsetHeight
 
+     console.log(height)
+
     // Create a container for bar chart
 
-    let padding = 30
+    let padding = 50
 
 
     // Se crea la escala del eje x 
@@ -106,11 +108,34 @@ function createGraph(data,maxVolume) {
     .attr("cx", (d) => xScale(d[0]))
     .attr("cy", d=> yScale(d[1]))
     .attr("r", 5)
-    .attr("fill",'#448e6c')
+    .attr("class",(d) => d[1]==7 ? 'equivalencePoint':'point')
+    .append("title")
+    .text( d=>`pH:${d[1].toFixed(2)} 
+volumen: ${d[0].toFixed(2)} ml`)
     
-    const xAxis = d3.axisBottom(xScale);
+    // const xAxis = d3.axisBottom(xScale);
     
-    const yAxis = d3.axisLeft(yScale);
+    // const yAxis = d3.axisLeft(yScale);
+
+    const xAxis = d3.axisBottom(xScale).ticks(10);
+    
+    const yAxis = d3.axisLeft(yScale).ticks(10);
+
+    const xAxisGrid = d3.axisBottom(xScale).tickSize(-height+2*padding).tickFormat('').ticks(10);
+    
+    const yAxisGrid = d3.axisLeft(yScale).tickSize(-width+2*padding).tickFormat('').ticks(10);
+
+    // Create grids.
+    svg.append('g')
+    .attr('class', 'xAxeGrid')
+    .attr('transform', `translate(0,${height-padding})`)
+    .call(xAxisGrid);
+
+    svg.append('g')
+    .attr('class', 'yAxeGrid')
+    .attr('transform', `translate(${padding},0)`)
+    .call(yAxisGrid);
+
 
 
     svg.append("g")
@@ -123,17 +148,26 @@ function createGraph(data,maxVolume) {
 
     svg.append("text")
     .attr("text-anchor", "end")
-    .attr("x", width)
-    .attr("y", height-padding-10)
-    .text("Volumen agregado de NaOH (ml)");
+    .attr("class", "axisLabel")
+    .attr("x", width-padding)
+    .attr("y", height-15)
+    .text('Volumen NaOH (ml)');
 
     svg.append("text")
-    .attr("class", "y label")
+    .attr("class", "axisLabel")
     .attr("text-anchor", "end")
     .attr("y", padding/3)
     .attr("x", padding)
     .attr("dy", ".75em")
     .text("pH");
+
+    svg.append("text")
+    .attr("class", "graphTitle")
+    .attr("text-anchor", "middle")
+    .attr("y", padding/3)
+    .attr("x", width/2)
+    .attr("dy", ".75em")
+    .text("Titulación de HCl con NaOH");
     
 }
 
