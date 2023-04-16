@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+    <head>
+    <!-- Meta information -->
+    <title>D3 test 1.1</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="cssTeam">
+    <meta name="description" content="This is the products for Chemical Science for Students">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#001533"/>
+    <!-- <link rel="icon" href="./media/icon.png" >  -->
+    <!-- load styles and inmediate resources -->
+    <link type="text/css" rel="stylesheet" href="./style.css">   
+    <!-- Preconnet files -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+    <body>
+
+         <!-- Barra de navegación -->
+        <nav class="navbar flex-container">
+            <img class="logo-img" src="./media/fennexLogo.svg">
+            <ul class="navbar-list">
+                <li><a class="link">Demo</a></li>
+                <li><a class="link">CSS</a></li>
+            </ul>
+        </nav>
+        <main class="main-container flex-container">
+            
+            <!-- Gráfica curva de titulación -->
+            <div class="div-container flex-container" id="grafica"></div>
+
+             <!-- Barra de ajustes -->
+            <aside>
+                <h3 class="subtitle"><i class="fa-solid fa-flask"></i> AJUSTES</h3>
+                <h4>Titulante</h4>
+                
+                <section class="flex-container">
+
+                    <section class="flex-container column">
+                        <label>Concentración</label>
+                        <div>
+                            <input id="inputBasisConcentration" placeholder="Conc.">
+                            <span><b>M</b></span>
+                        </div>
+                    </section>
+
+                    <section class="flex-container column">
+                        <label>Especie</label>
+                        <input list="titulantes">
+                        <datalist id="titulantes">
+                            <option value="" disabled selected hidden>Selecciona tu titulante</option>
+                            <option value="NaOH">NaOH</option>
+                            <option value="KOH">KOH</option>
+                            <option value="LiOH">LiOH</option>
+                            <option value="Ca(OH)2">Ca(OH)2</option>
+                            <option value="Ba(OH)2">Ba(OH)2</option>
+                            <option value="Sr(OH)2">Sr(OH)2</option>
+                        </datalist>
+                    </section>
+
+                </section>
+
+                <h4>Analito</h4>
+                
+                <section class="flex-container">
+
+                    <section class="flex-container column">
+                        <label>Concentración</label>
+                        <div>
+                            <input id="inputAcidConcentration" placeholder="Conc.">
+                            <span><b>M</b></span>
+                        </div>
+                    </section>
+
+                    <section class="flex-container column">
+                        <label>Analito</label>
+                        <input list="analitos">
+                        <datalist id="analitos">
+                            <option value="" disabled selected>Select your option</option>
+                            <option value="HCl">HCl</option>
+                            <option value="HBr">HBr</option>
+                            <option value="HI">HI</option>
+                            <option value="HNO3">HNO3</option>
+                            <option value="H2SO4">H2SO4</option>
+                            <option value="HClO4">HClO4</option>
+                        </datalist>
+                    </section>
+
+                </section>
+                <br>
+                <section class="flex-container">
+                    <section>
+                        <label>Intervalo de volumen</label>
+                        <input type="number" min="0.05" max="5" step="0.05" id="VolAdded" placeholder="Volumen agregado"><span><b> ml</b></span>
+                    </section>
+                    <section>
+                        <label>Número de puntos</label>
+                        <div class="flex-container">
+                            <input type="range" value="10" min="10" max="1000" id="inputPoints" placeholder="Número de puntos" oninput="updatePoints()">
+                            <span id="numberPoint" class="number-points-width">10</span>
+                        </div>
+                    </section>
+
+                </section>
+
+
+                <button onclick="createTitulation()">Titular!</button>
+                
+                <section class="add flex-container">
+
+
+                </section>
+            </aside>
+
+        </main>
+
+         <!-- Footer -->
+         <footer class="flex-container">
+            <p>Copyright ©2023 CSS</p>
+            <section class="flex-container">
+                <a class="social-media flex-container"><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="social-media flex-container"><i class="fa-brands fa-instagram"></i></a>
+                <a class="social-media flex-container"><i class="fa-brands fa-youtube"></i></a>
+                <a class="social-media flex-container"><i class="fa-brands fa-tiktok"></i></a>
+            </section>
+         </footer>
+
+    
+
+    
+
+    </body>
+
+
+    <script src="d3.js" type="text/javascript" defer></script>
+    <script type="text/javascript" src="./app.js" defer></script>
+    <script src="./fontAsome.min.js" type="text/javascript" defer></script>
+
+
+
+</html>

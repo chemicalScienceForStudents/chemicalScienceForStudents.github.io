@@ -1,224 +1,434 @@
 /******************/
-/* CSS variables */
+/* CSS VARIABLES */
 /****************/
 
 :root{
-
+    
     /***************/
-    /*** Colors ***/
+    /*** COLORS ***/
     /*************/
-
+    --blue:#14406c;
     --dark-blue:#0a1727;
     --dark-cream:#e2cd66;
     --light-cream:#edd9b7;
+    
+    /*************/
+    /*** SIZE ***/
+    /***********/
 
+    --navegation-height:50px;
+    --settings-width:400px;
 }
 
+
+/***************/
+/* TAGS STYLE */
+/*************/
 
 body{
-    margin: 0;
     font-family: 'Manrope', sans-serif;
+    margin: 0;
     text-align: center;
-}
-
-.main-container{
-    height: calc(100vh - 170px);
-    justify-content: space-between;
-}
-
-.div-container{
-    height: calc(100vh - 170px);
-    width: 75%;
 }
 
 /**************/
 /***GENERAL***/
 /************/
 
+.non-scroll{
+    overflow: hidden;
+}
+
 .flex-container{
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 /*************/
-/***NAVBAR***/
+/***HEADER***/
 /***********/
 
-.navbar{
-    justify-content: space-between;
-    height: 70px;
-    box-sizing: border-box;
-    overflow: hidden;
+.header-container{
     background-color: var(--dark-blue);
+    height: var(--navegation-height);
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    width: 100%;
 }
 
 .logo-img{
+    height: 25px;
+    padding: 12.5px;
     width: auto;
-    height: 30px;
-    padding: 20px;
 }
 
-.navbar-list{
+.menu-container{
+    background: linear-gradient(180deg, var(--dark-blue), var(--blue));
     display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    height: auto;
-    padding: 0;
+    flex-direction: column;
+    height: calc(100vh - 50px);
+    left: -300vw;
+    padding-top: 10px;
+    position: fixed;
+    top: 50px;
+    transition-duration: 0.35s;
+    width: 100%;
+    z-index: 3;
 }
 
-
-.link{
-    display: block;
+.menu-link{
+    color: white;
     cursor: pointer;
-    padding: 15px 20px;
+    font-size: 22px;
+    font-weight: 400;
+    height: fit-content;
+    letter-spacing: 3px;
+    padding: 10px 20px;
+}
+
+.menu-selection{
+    text-decoration: underline;
+    text-decoration-color: var(--dark-cream);
+    text-decoration-thickness: 3px;
+}
+
+.menu-burger-button{
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
     font-size: 30px;
-    font-weight: 300;
-    color: white;
+    height: 50px;
+    justify-content: center;
+    width: 50px;
 }
 
+.menu-settings-button{
+    align-items: center;
+    background-color: var(--dark-blue);
+    border-radius: 50px;
+    border: none;
+    bottom: 10px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-size: 30px;
+    height: 50px;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+    position: fixed;
+    right:10px;
+    transition-duration: 0.35s;
+    width: 50px;
+    z-index: 2;
+}
 
+/***********/
+/***MAIN***/
+/*********/
 
-/**************/
-/***SIDEBAR***/
-/************/
+.main-container{
+    display: flex;
+    height: calc(100vh - 50px);
+}
 
+.graph-container{
+    height: calc(100vh - 50px );
+    width: 100%;
+}
 
-aside{
-    width: 25%;
-    background: var(--light-cream);
+.settings-container{
+    background:linear-gradient(180deg,var(--blue),var(--dark-blue));
     height: 100%;
+    left: -300vw;
+    margin-bottom: 10px;
     overflow-y: auto;
-    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    transition-duration: 0.35s;
+    width: 100%;
 }
 
-.subtitle{
-    background-color: var(--dark-cream);
-    font-size: 35px;
-    padding: 5px;
+.settings-title{
+    background-color: var(--dark-blue);
     color: white;
-    font-weight: 800;
-    margin: 20px 0 0 0;
-}
-
-h4{
-    font-size: 22.5px;
-    font-weight: 500;
-    margin: 5px;
-}
-
-input{
-    padding: 5px;
-    border: 2px solid gray;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin: 10px 0;
+    padding: 5px 0;
     text-align: center;
-    font-family: 'Manrope', sans-serif;
-    border-radius: 13px;
-    font-size: 18px;
-    font-weight: 300;
-    outline: none;
-    margin: 5px;
-    width: 75%;
 }
 
-button{
-    padding: 10px 15px;
-    border-radius: 25px;
-    background: var(--dark-blue);
+.settings-subtitle{
     color: white;
-    outline: none;
     font-size: 20px;
     font-weight: 600;
-    border: none;
+    margin: 0;
+}
+
+.settings-sub-container{
+    height: fit-content;
+    width: 100%;
+}
+
+.settings-sub-sub-container{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: space-between;
+    padding: 0 22.5px;
+}
+
+.settings-label{
+    color: white;
+    display: block;
+    font-size: 18px;
+    padding: 10px 0 5px 0;
+}
+
+.settings-input{
+    border-radius: 6px;
+    font-size: 18px;
+    outline: none;
+    padding: 5px;
+    text-align: center;
+    width: 125px;
+    border: 2px solid darkgray;
+}
+
+.settings-input-2{
+    width: 86px;
+}
+
+.settings-select-input{
+    width: 140px;
     cursor: pointer;
-    margin: 10px;
 }
 
 
+.settings-label-unit{
+    color: white;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 800;
+    padding-left: 10px;
+    text-align: left;
+    width: 30px;
+}
 
+.graph-type-container{
+    align-items:center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px 0;
+    width: 100%;
+}
 
+.settings-label-graph-type{
+    color: white;
+    font-weight: 200;
+}
 
+.show-menu{
+    left: 0px;
+}
 
-
-
-
-
-
-
-
+.hide-button{
+    bottom: -100px;
+}
 
 /*************/
 /***FOOTER***/
 /***********/
 
-
-
-
-footer{
-    flex-direction: column;
-    height: 100px;
-    box-sizing: border-box;
+.footer-container{
     background-color: var(--dark-blue);
+    height: fit-content;
+    padding: 5px 0;
 }
 
-footer p {
-    font-size: 25px;
+.footer-container p {
+    color: white;
+    font-size: 20px;
     font-weight: 500;
     margin: 0;
-    color: white;
 }
 
 .social-media{
-    cursor: pointer;
     background-color: var(--light-cream);
     border-radius: 50%;
+    cursor: pointer;
     height: 30px;
-    width: 30px;
     margin: 5px;
+    width: 30px;
 }
 
-.equivalencePoint{
-    fill:var(--dark-blue);
-    transition-duration: 0.35s;
-    stroke: var(--dark-blue);
-    stroke-width: 1px;
-    stroke-opacity: 0.5;
-}
+/**********************/
+/* Responsive design */
+/********************/
 
-.point{
-    fill: #448e6c;
-    transition-duration: 0.35s;
-    stroke: var(--dark-blue);
-    stroke-width: 1px;
-    stroke-opacity: 0.5;
-}
+/**********************/
+/* Mobile (landscape)*/
+/********************/
 
-.point:hover,.equivalencePoint:hover{
-    r:7.5px;
-    cursor:pointer;
-    stroke: var(--dark-blue);
-    stroke-width: 2px;
-    stroke-opacity: 1;
+/*** Only works for mobiles in landscape with resulution of height : 412 px with width: > 412 px ***/
+
+@media (max-height:412px) and (orientation:landscape){
+    
+    .settings-sub-sub-container{
+        flex-wrap:nowrap;
+    }
 }
 
 
+/******************/
+/* DESKTOP STYLE */
+/****************/
 
-.graphTitle{
+/***********************************/
+/* Desktop and tablet (landscape) */
+/*********************************/
+
+/*********************/
+/* Only break point */
+/*******************/
+/* 
+   --------------------------  Explication -> ipad resolution is 768 x 1024px in vertical postion
+   |                        |                 is considered as a smartphone, but in 1024 x 768px 
+   |                        |                 is considered as a computer, this break point consider
+   |     916 x 412 px       |                 that only exist two design mobile or desktop,the bigger
+   |                        |                 resolution in phone founded was 411 x 812px, so we take
+   |                        |                 the limit values of resolution as following: width:768+1px
+   --------------------------                 and height:411+1px up this are computer down this are a phone
+*/
+
+@media (min-height:412px) and (min-width: 916px) {
+    
+    /*************/
+    /***HEADER***/
+    /***********/
+
+    .menu-burger-button{
+        display: none;
+    }
+
+    .menu-container{
+        align-items: center;
+        background: transparent;
+        flex-direction: row;
+        height: 50px;
+        justify-content: center;
+        padding-top: 0;
+        position: static;
+        width: fit-content;
+    }
+
+    .menu-settings-button{
+        display: none;
+    }
+
+    /***********/
+    /***MAIN***/
+    /*********/
+
+    .graph-container{
+        height: calc(100vh - 50px );
+        width: calc(100vw - var(--settings-width));
+    }
+
+    .settings-container{
+        height: calc(100vh - 50px );
+        margin: 0;
+        overflow-y: inherit;
+        position: static;
+        width: var(--settings-width);
+    }
+
+    .settings-sub-container{
+        width: var(--settings-width);
+    }
+
+    .graph-type-container{
+        width: var(--settings-width);
+    }
+
+}
+
+
+/**********************/
+/* Mobile (landscape)*/
+/********************/
+
+/*** Only works for mobiles in landscape with resulution of height : 412 px with width: > 412 px ***/
+
+@media (max-height:412px) and (orientation:landscape){
+}
+
+
+
+/****************/
+/* GRAPH STYLE */
+/**************/
+
+.axis-g{
     font-family: 'Manrope', sans-serif;
-    font-size: x-large;
+}
+
+.axis-label{
+    font-family: 'Manrope', sans-serif;
+}
+
+.graph-title{
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
     font-weight: 600;
 }
 
-.axisLabel{
-    font-family: 'Manrope', sans-serif;
-    font-size: large;
-}
-
-.xAxeGrid{
+.axis-grid{
     color:rgba(128, 128, 128, 0.5)
 }
 
-.yAxeGrid{
-    color:rgba(128, 128, 128, 0.5)
+.graph-dot{
+    fill: url('#my-cool-gradient');
+    cursor: pointer;
+    transition-duration: 0.35s;
+    stroke: transparent;
+    stroke-width: 2.5px;
+}
+
+.graph-dot-2{
+    fill: #e2cd66 !important;
+    cursor: pointer;
+    transition-duration: 0.35s;
+    stroke:var(--dark-blue);
+    stroke-width: 2.5px;
+}
+
+.graph-dot:hover,.graph-dot-2:hover{
+    r:7.5px;
+    stroke: var(--dark-blue);
+}
+
+.tooltip{
+    display: none;
+    font-size: 10px;
+    text-align: left;
+    padding: 2px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 0.5px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.75);
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: fit-content;
+    width: fit-content;
 }
