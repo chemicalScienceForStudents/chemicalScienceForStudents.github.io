@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- SCRIPT -->
+    <script src="../js/script.js" defer></script>
+    <script src="../js/carousel.js" defer></script>
+
+    <!-- ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>🧪 Blog Académico CSS</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="u-flex-centered">
+        <img src="../img/Logos/Logo-04.png" alt="CSS Logo" class="logo" />
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#" class="main-nav-link u-flex-centered">Inicio</a></li>
+          <li>
+            <a href="../index.html" class="main-nav-link u-flex-centered"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a href="#" class="main-nav-link u-flex-centered">Acerca de</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link u-flex-centered">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav u-flex-centered">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <button class="btn-return">
+      <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
+
+    <main>
+      <div class="u-container">
+        <div class="article-example">
+          <div class="heading-box u-inline-block u-margin-bottom-big">
+            <div class="u-inline-block">
+              <h2 class="heading-primary">Título</h2>
+            </div>
+
+            <div class="info-box u-margin-bottom-med">
+              <div class="author-box">
+                <figure class="author-img">
+                  <img src="../img/selfie.jpg" alt="Autora" />
+                </figure>
+
+                <div class="author-info">
+                  <span class="author-name">Por Autora</span>
+
+                  <ul class="author-links">
+                    <li>
+                      <a href="#" class="author-link"
+                        ><ion-icon
+                          class="author-social-icon"
+                          name="logo-linkedin"
+                        ></ion-icon
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#" class="author-link"
+                        ><ion-icon
+                          class="author-social-icon"
+                          name="logo-facebook"
+                        ></ion-icon
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#" class="author-link"
+                        ><ion-icon
+                          class="author-social-icon"
+                          name="logo-twitter"
+                        ></ion-icon
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <button class="btn-like btn-like__big btn-like__big__centered">
+                <ion-icon class="btn-like-icon" name="heart"> </ion-icon>
+                <span class="score">12345</span>
+              </button>
+            </div>
+            <span class="date__article">04 Agosto 2025</span>
+          </div>
+
+          <figure class="img-container img-container--big u-float-right">
+            <img src="../img/img-1.jpg" alt="Laboratorio" />
+          </figure>
+
+          <p class="p__article">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+            molestias, sequi, sapiente provident autem reprehenderit, voluptatum
+            voluptatem officia quaerat delectus quos expedita perspiciatis
+            assumenda! Et magni non optio voluptate ut. Lorem ipsum dolor, sit
+            amet consectetur adipisicing elit. Culpa molestias, sequi, sapiente
+            provident autem reprehenderit, voluptatum voluptatem officia quaerat
+            delectus quos expedita perspiciatis assumenda! Et magni non optio
+            voluptate ut. Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Culpa molestias, sequi. Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Culpa molestias, sequi, sapiente
+            provident autem reprehenderit, voluptatum voluptatem officia quaerat
+            delectus quos expedita perspiciatis assumenda! Et magni non optio
+            voluptate ut. Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Culpa molestias, sequi, sapiente provident autem
+            reprehenderit, voluptatum voluptatem officia quaerat delectus quos
+            expedita perspiciatis assumenda! Et magni non optio voluptate ut.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+            molestias, sequi.
+          </p>
+
+          <figure class="img-container img-container--small u-float-left">
+            <img src="../img/img-7.jpg" alt="Laboratorio" />
+          </figure>
+          <p class="p__article">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+            molestias, sequi, sapiente provident autem reprehenderit, voluptatum
+            voluptatem officia quaerat delectus quos expedita perspiciatis
+            assumenda! Et magni non optio voluptate ut. Lorem ipsum dolor, sit
+            amet consectetur adipisicing elit. Culpa molestias, sequi, sapiente
+            provident autem reprehenderit, voluptatum voluptatem officia quaerat
+            delectus quos expedita perspiciatis assumenda! Et magni non optio
+            voluptate ut. Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Culpa molestias, sequi. Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Culpa molestias, sequi, sapiente
+            provident autem reprehenderit, voluptatum voluptatem officia quaerat
+            delectus quos expedita perspiciatis assumenda! Et magni non optio
+            voluptate ut. Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Culpa molestias, sequi, sapiente provident autem
+            reprehenderit, voluptatum voluptatem officia quaerat delectus quos
+            expedita perspiciatis assumenda! Et magni non optio voluptate ut.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+            molestias, sequi.sit amet consectetur adipisicing elit. Culpa
+            molestias, sequi. Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Culpa molestias, sequi. Lorem ipsum dolor, sit
+            amet consectetur adipisicing elit. Culpa molestias, sequi, sapiente
+            provident autem reprehenderit, voluptatum
+          </p>
+
+          <p class="p__article p__article__quote">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+            molestias, sequi, sapiente provident autem reprehenderit, voluptatum
+            voluptatem officia quaerat delectus quos expedita perspiciatis
+            assumenda!
+          </p>
+
+          <figure class="img-container img-container--small u-float-right">
+            <img src="../img/img-4.jpg" alt="Laboratorio" />
+          </figure>
+          <p class="p__article">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+            molestias, sequi, sapiente provident autem reprehenderit, voluptatum
+            voluptatem officia quaerat delectus quos expedita perspiciatis
+            assumenda! Et magni non optio voluptate ut. Lorem ipsum dolor, sit
+            amet consectetur adipisicing elit. Culpa molestias, sequi, sapiente
+            provident autem reprehenderit, voluptatum voluptatem officia quaerat
+            delectus quos expedita perspiciatis assumenda! Et magni non optio
+            voluptate ut. Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Culpa molestias, sequi. Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Culpa molestias, sequi, sapiente
+            provident autem reprehenderit, voluptatum voluptatem officia quaerat
+            delectus quos expedita perspiciatis assumenda! Et magni non optio
+            voluptate ut. Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Culpa molestias, sequi, sapiente provident autem
+            reprehenderit, voluptatum voluptatem officia quaerat delectus quos
+            expedita perspiciatis assumenda! Et magni non optio voluptate ut.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+            molestias, sequi.sit amet consectetur adipisicing elit. Culpa
+            molestias, sequi. Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Culpa molestias, sequi. Lorem ipsum dolor, sit
+            amet consectetur adipisicing elit. Culpa molestias, sequi, sapiente
+            provident autem reprehenderit, voluptatum
+          </p>
+
+          <p class="p__article">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+            molestias, sequi, sapiente provident autem reprehenderit, voluptatum
+            voluptatem officia quaerat delectus quos expedita perspiciatis
+            assumenda! Et magni non optio voluptate ut. Lorem ipsum dolor, sit
+            amet consectetur adipisicing elit. Culpa molestias, sequi, sapiente
+            provident autem reprehenderit, voluptatum voluptatem officia quaerat
+            delectus quos expedita perspiciatis assumenda! Et magni non optio
+            voluptate ut. Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Culpa molestias, sequi. Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Culpa molestias, sequi, sapiente
+            provident autem reprehenderit, voluptatum voluptatem officia quaerat
+            delectus quos expedita perspiciatis assumenda! Et magni non optio
+            voluptate ut.
+          </p>
+
+          <div class="video-container">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/w_ZqTGxtHrk"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="section-related">
+      <div class="u-margin-bottom-med u-text-center">
+        <h2 class="heading-primary">Relacionados</h2>
+      </div>
+
+      <div class="carousel__container u-container">
+        <div class="carousel__view">
+          <div class="carousel__item">
+            <article class="card__container">
+              <div class="card__img__box">
+                <a
+                  href="html/article-example.html"
+                  class="img-btn u-height-full"
+                >
+                  <img
+                    src="../img/img-2.jpg"
+                    alt="Laboratorio"
+                    class="article__img"
+                  />
+                </a>
+              </div>
+              <div class="article__text__box u-padding-small">
+                <a
+                  href="html/article-example.html"
+                  class="title__article title__article__med"
+                  >Título</a
+                >
+                <a href="#" class="author__article author__article__small"
+                  >Por Autor</a
+                >
+
+                <p class="description__article description__article__med">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                  error ea impedit optio enim voluptas ipsum vel similique et
+                  assumenda aperiam voluptatibus perferendis saepe odio
+                  consequuntur veniam, adipisci nostrum consectetur!
+                </p>
+
+                <button class="btn-like">
+                  <ion-icon class="article-btn-like-icon" name="heart">
+                  </ion-icon>
+                  <span class="article-score">12345</span>
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <div class="carousel__item">
+            <article class="card__container">
+              <div class="card__img__box">
+                <a
+                  href="html/article-example.html"
+                  class="img-btn u-height-full"
+                >
+                  <img
+                    src="../img/img-3.jpg"
+                    alt="Laboratorio"
+                    class="article__img"
+                  />
+                </a>
+              </div>
+              <div class="article__text__box u-padding-small">
+                <a
+                  href="html/article-example.html"
+                  class="title__article title__article__med"
+                  >Título</a
+                >
+                <a href="#" class="author__article author__article__small"
+                  >Por Autor</a
+                >
+
+                <p class="description__article description__article__med">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                  error ea impedit optio enim voluptas ipsum vel similique et
+                  assumenda aperiam voluptatibus perferendis saepe odio
+                  consequuntur veniam, adipisci nostrum consectetur!
+                </p>
+
+                <button class="btn-like">
+                  <ion-icon class="article-btn-like-icon" name="heart">
+                  </ion-icon>
+                  <span class="article-score">12345</span>
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <div class="carousel__item">
+            <article class="card__container">
+              <div class="card__img__box">
+                <a
+                  href="html/article-example.html"
+                  class="img-btn u-height-full"
+                >
+                  <img
+                    src="../img/img-4.jpg"
+                    alt="Laboratorio"
+                    class="article__img"
+                  />
+                </a>
+              </div>
+              <div class="article__text__box u-padding-small">
+                <a
+                  href="html/article-example.html"
+                  class="title__article title__article__med"
+                  >Título</a
+                >
+                <a href="#" class="author__article author__article__small"
+                  >Por Autor</a
+                >
+
+                <p class="description__article description__article__med">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                  error ea impedit optio enim voluptas ipsum vel similique et
+                  assumenda aperiam voluptatibus perferendis saepe odio
+                  consequuntur veniam, adipisci nostrum consectetur!
+                </p>
+
+                <button class="btn-like">
+                  <ion-icon class="article-btn-like-icon" name="heart">
+                  </ion-icon>
+                  <span class="article-score">12345</span>
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <div class="carousel__item">
+            <article class="card__container">
+              <div class="card__img__box">
+                <a
+                  href="html/article-example.html"
+                  class="img-btn u-height-full"
+                >
+                  <img
+                    src="../img/img-5.jpg"
+                    alt="Laboratorio"
+                    class="article__img"
+                  />
+                </a>
+              </div>
+              <div class="article__text__box u-padding-small">
+                <a
+                  href="html/article-example.html"
+                  class="title__article title__article__med"
+                  >Título</a
+                >
+                <a href="#" class="author__article author__article__small"
+                  >Por Autor</a
+                >
+
+                <p class="description__article description__article__med">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                  error ea impedit optio enim voluptas ipsum vel similique et
+                  assumenda aperiam voluptatibus perferendis saepe odio
+                  consequuntur veniam, adipisci nostrum consectetur!
+                </p>
+
+                <button class="btn-like">
+                  <ion-icon class="article-btn-like-icon" name="heart">
+                  </ion-icon>
+                  <span class="article-score">12345</span>
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <div class="carousel__item">
+            <article class="card__container">
+              <div class="card__img__box">
+                <a
+                  href="html/article-example.html"
+                  class="img-btn u-height-full"
+                >
+                  <img
+                    src="../img/img-6.jpg"
+                    alt="Laboratorio"
+                    class="article__img"
+                  />
+                </a>
+              </div>
+              <div class="article__text__box u-padding-small">
+                <a
+                  href="html/article-example.html"
+                  class="title__article title__article__med"
+                  >Título</a
+                >
+                <a href="#" class="author__article author__article__small"
+                  >Por Autor</a
+                >
+
+                <p class="description__article description__article__med">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                  error ea impedit optio enim voluptas ipsum vel similique et
+                  assumenda aperiam voluptatibus perferendis saepe odio
+                  consequuntur veniam, adipisci nostrum consectetur!
+                </p>
+
+                <button class="btn-like">
+                  <ion-icon class="article-btn-like-icon" name="heart">
+                  </ion-icon>
+                  <span class="article-score">12345</span>
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <div class="carousel__item">
+            <article class="card__container">
+              <div class="card__img__box">
+                <a
+                  href="html/article-example.html"
+                  class="img-btn u-height-full"
+                >
+                  <img
+                    src="../img/img-7.jpg"
+                    alt="Laboratorio"
+                    class="article__img"
+                  />
+                </a>
+              </div>
+              <div class="article__text__box u-padding-small">
+                <a
+                  href="html/article-example.html"
+                  class="title__article title__article__med"
+                  >Título</a
+                >
+                <a href="#" class="author__article author__article__small"
+                  >Por Autor</a
+                >
+
+                <p class="description__article description__article__med">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                  error ea impedit optio enim voluptas ipsum vel similique et
+                  assumenda aperiam voluptatibus perferendis saepe odio
+                  consequuntur veniam, adipisci nostrum consectetur!
+                </p>
+
+                <button class="btn-like">
+                  <ion-icon class="article-btn-like-icon" name="heart">
+                  </ion-icon>
+                  <span class="article-score">12345</span>
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <button class="btn__carousel btn__carousel--left">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </button>
+        <button class="btn__carousel btn__carousel--right">
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <ul class="social-links">
+        <li>
+          <a href="#" class="footer-link"
+            ><ion-icon class="social-icon" name="logo-linkedin"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="#" class="footer-link"
+            ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="#" class="footer-link"
+            ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+          ></a>
+        </li>
+      </ul>
+
+      <p class="copyright">
+        Copyright &copy; 2023 por Chemical Science for Students. Todos los
+        derechos reservados.
+      </p>
+    </footer>
+  </body>
+</html>
