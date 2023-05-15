@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acerca de nosotros</title>
+    <link
+      rel="icon"
+      href="assets/50cc9ad5-e8bd-47e3-9866-27ed8230e325.jfif"
+      type="image/x-icon"
+    />
+
+   
+    
+    
+    <link rel="stylesheet" href="Styles/layout.css" />
+    <link rel="stylesheet" href="Styles/Components/navbar.css" />
+    <link rel="stylesheet" href="Styles/Components/carousel.css" />
+    <link rel="stylesheet" href="Styles/Components/card.css" />
+    <link rel="stylesheet" href="Styles/Components/button.css" />
+    <link rel="stylesheet" href="Styles/animation.css" />
+    <link rel="stylesheet" href="Styles/Components/scroll-top.css" />
+    <link rel="stylesheet" href="Styles/Components/gallery.css" />
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  
+  <!-- Inicia Cuerpo -->
+  <body>
+<!-- Barra de navegación -->
+<nav class="navbar" id="navbar">
+    <a class="navbar-img"><img src="assets/Logo-02.png" /></a>
+    <a class="navbar-item" href="#">Inicio</a>
+    <a class="navbar-item" href="#">Blog</a>
+    <a class="navbar-item" href="#">Nosotros</a>
+    <a class="navbar-item" href="#">Contacto</a>
+    <a id="hamburguer" class="hamburguer" onclick="desplegarElementosNavbar()">
+      <i class="fa fa-bars"></i>
+    </a>
+</nav>
+
+
+  <!-- Mision y vision -->
+  <main>
+    <div class="row navbar-margin">
+      <div class="col fade-in">
+        <p class="mision-vision">
+          Nuestra <span class="palabra-resaltada">mision</span> es lorem ipsum
+          dolor sit amet, consectetur adipiscing elit. Pellentesque quam
+          augue, placerat eu lorem a orem ipsum
+          dolor sit amet, consectetur adipiscing elit
+        </p>
+      </div>
+      <div class="img-col">
+        <img class="image walk-in-right" src="assets/horizontal placeholder image.png"/>
+      </div>
+    </div>
+    <div class="row-inverted">
+      <div class="col color-col walk-in-left">
+        <ul class="fade-in">
+          <li><button class="boton-oscuro" onclick="scrollToElement('quienes-somos')">Quienes somos</button></li>
+          <li><button class="boton-oscuro"  onclick="scrollToElement('nuestros-productos')">Nuestros Productos</button></li>
+          <li><button class="boton-oscuro"  onclick="scrollToElement('conoce-al-equipo')">Nuestro equipo</button></li>
+        </ul>
+      </div>
+      <div class="col fade-in">
+        <p class="mision-vision">
+          Nuestra <span class="palabra-resaltada">vision</span> es lorem ipsum
+          dolor sit amet, consectetur adipiscing elit. Pellentesque quam
+          augue, placerat eu lorem a orem ipsum
+          dolor sit amet, consectetur adipiscing elit
+        </p>
+      </div>
+    </div>
+
+
+<!-- Boton scroll back -->
+
+<button onclick="scrollBack()" id="scroll-top-btn" class="scroll-top" title="Regresar">
+  <i class="fa-solid fa-arrow-up"></i>
+  <p>Regresar</p>
+</button>
+  
+<!-- Quienes somos -->
+
+  
+    <div id="quienes-somos" class="title-row">
+      <p class="titulo" ><span class="palabra-resaltada">¿QUIENES SOMOS?</p></span>
+    </div>
+    <div class="row">
+      <div class="col-parrafo">
+        <p class="parrafo fade-in">
+          Chemical Scinece for Stududents es una Startup mexicana creada con
+          el objetivo de lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Pellentesque quam augue, placerat eu lorem a lorem ipsum dolor
+          sit amet, consectetur adipiscing elit. Pellentesque quam augue,
+          placerat eu lorem a.Pellentesque quam augue, placerat eu lorem a lorem ipsum dolor
+          sit amet, consectetur adipiscing elit. Pellentesque quam augue,
+          placerat eu lorem a.
+        </p>
+      </div>
+      <div class="img-col">
+        <img class="image walk-in-right" src="assets/horizontal placeholder image.png" alt="Porducto 1">
+      </div>
+    </div>
+    <div class="filosofia-bg">
+      <p class="filosofia fade-in">Nuestra filosofia es lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Pellentesque quam augue, placerat eu lorem a lorem
+      ipsum dolor sit amet</p>
+    </div>
+
+
+
+  <!-- Productos -->
+
+  
+    <div class="title-row">
+      <p class="titulo" id="nuestros-productos"><span class="palabra-resaltada">NUESTROS PRODUCTOS</p></span>
+    </div>
+
+    <!-- Producto 1 -->
+    <div class="row-prod1">
+      <div class="col-carousel walk-in-left">
+        <div class="carousel1">
+          <div class="carousel1-inner">
+              <input class="carousel1-open" type="radio" id="carousel1-1" name="carousel1" aria-hidden="true" hidden="" checked="checked">
+              <div class="carousel1-item">
+                  <img src="assets/horizontal placeholder image.png">
+              </div>
+              <input class="carousel1-open" type="radio" id="carousel1-2" name="carousel1" aria-hidden="true" hidden="">
+              <div class="carousel1-item">
+                  <img src="assets/horizontal placeholder image.png">
+              </div>
+              <input class="carousel1-open" type="radio" id="carousel1-3" name="carousel1" aria-hidden="true" hidden="">
+              <div class="carousel1-item">
+                  <img src="assets/horizontal placeholder image.png">
+              </div>
+              <label for="carousel1-3" class="carousel1-control prev control-1">‹</label>
+              <label for="carousel1-2" class="carousel1-control next control-1">›</label>
+              <label for="carousel1-1" class="carousel1-control prev control-2">‹</label>
+              <label for="carousel1-3" class="carousel1-control next control-2">›</label>
+              <label for="carousel1-2" class="carousel1-control prev control-3">‹</label>
+              <label for="carousel1-1" class="carousel1-control next control-3">›</label>
+              <ol class="carousel1-indicators">
+                  <li>
+                      <label for="carousel1-1" class="carousel1-bullet">•</label>
+                  </li>
+                  <li>
+                      <label for="carousel1-2" class="carousel1-bullet">•</label>
+                  </li>
+                  <li>
+                      <label for="carousel1-3" class="carousel1-bullet">•</label>
+                  </li>
+              </ol>
+          </div>
+        </div> 
+      </div>
+      <div class="col-descripcion-producto fade-in-long">
+        <p class="titulo-producto">Producto 1</p>
+        <p class="parrafo">Pellentesque quam augue, placerat eu lorem a lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quam augue, placerat eu lorem a.</p>
+        <button class="boton-claro">Ir a producto</button>
+      </div>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="row-prod2 walk-in-right">
+      <div class="col-descripcion-producto">
+        <p class="titulo-producto">Producto 2</p>
+        <p class="parrafo">Pellentesque quam augue, placerat eu lorem a lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quam augue, placerat eu lorem a.</p>
+        <button class="boton-claro">Ir a producto</button>
+      </div>
+      <div class="col-carousel ">
+        <div class="carousel2">
+          <div class="carousel2-inner">
+              <input class="carousel2-open" type="radio" id="carousel2-1" name="carousel2" aria-hidden="true" hidden="" checked="checked">
+              <div class="carousel2-item">
+                  <img src="assets/horizontal placeholder image.png">
+              </div>
+              <input class="carousel2-open" type="radio" id="carousel2-2" name="carousel2" aria-hidden="true" hidden="">
+              <div class="carousel2-item">
+                  <img src="assets/horizontal placeholder image.png">
+              </div>
+              <input class="carousel2-open" type="radio" id="carousel2-3" name="carousel2" aria-hidden="true" hidden="">
+              <div class="carousel2-item">
+                  <img src="assets/horizontal placeholder image.png">
+              </div>
+              <label for="carousel2-3" class="carousel2-control prev control-1">‹</label>
+              <label for="carousel2-2" class="carousel2-control next control-1">›</label>
+              <label for="carousel2-1" class="carousel2-control prev control-2">‹</label>
+              <label for="carousel2-3" class="carousel2-control next control-2">›</label>
+              <label for="carousel2-2" class="carousel2-control prev control-3">‹</label>
+              <label for="carousel2-1" class="carousel2-control next control-3">›</label>
+              <ol class="carousel2-indicators">
+                  <li>
+                      <label for="carousel2-1" class="carousel2-bullet">•</label>
+                  </li>
+                  <li>
+                      <label for="carousel2-2" class="carousel2-bullet">•</label>
+                  </li>
+                  <li>
+                      <label for="carousel2-3" class="carousel2-bullet">•</label>
+                  </li>
+              </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+
+<!-- Nuestros integrantes -->
+  <div class="title-row">
+    <p class="titulo" id="conoce-al-equipo"><span class="palabra-resaltada">CONOCE AL EQUIPO</p></span>
+  </div>
+  <div class="container">
+    <ul class="cards">
+      <li class="card">
+        <img class="card-img" src="assets/placeholder-image.jpg"/>
+        <div class="card-title">Lider Equipo A</div>
+        <div class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <ul>
+          <li><a><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+      </li>
+      <li class="card">
+        <img class="card-img" src="assets/placeholder-image.jpg"/>
+        <div class="card-title">Lider Equipo B</div>
+        <div class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <ul>
+          <li><a><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+      </li>
+      <li class="card">
+        <img class="card-img" src="assets/placeholder-image.jpg"/>
+        <div class="card-title">Lider Equipo C</div>
+        <div class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        
+        <ul>
+          <li><a><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+      </li>  
+    </ul>
+  </div>
+
+  <!-- Galeria de imagenes -->
+
+  <div class="title-row">
+    <p class="titulo" id="conoce-al-equipo"><span class="palabra-resaltada">GALERIA</p></span>
+  </div>
+  <div class="gallery-container">
+    <ul class="gallery">
+      <li>
+        <img src="assets/placeholder-image.jpg" />
+        <div class="overlay">Descripcion de imagen</div>
+      </li>
+      <li>
+        <img src="assets/horizontal placeholder image.png" />
+        <div class="overlay">Descripcion de imagen</div>
+      </li>
+      <li>
+        <img src="assets/placeholder-image.jpg" />
+        <div class="overlay">Descripcion de imagen</div>
+      </li>
+      <li>
+        <img src="assets/placeholder-image.jpg" />
+        <div class="overlay">Descripcion de imagen</div>
+      </li>
+      <li>
+        <img src="assets/placeholder-image.jpg" />
+        <div class="overlay">Descripcion de imagen</div>
+      </li>
+      <li>
+        <img src="assets/placeholder-image.jpg" />
+        <div class="overlay">Descripcion de imagen</div>
+      </li>
+      <li>
+        <img src="assets/horizontal placeholder image.png" />
+        <div class="overlay">Descripcion de imagen</div>
+      </li>
+      <li>
+        <img src="assets/placeholder-image.jpg" />
+        <div class="overlay">Descripcion de imagen</div>
+      </li>
+      <li>
+        <img src="assets/placeholder-image.jpg" />
+        <div class="overlay">Descripcion de imagen</div>
+      </li>
+    </ul>
+  </div>
+  </main>
+      
+    <!-- Pie de pagina -->
+    <footer>
+      <ul>
+        <li><a><i class="fa-brands fa-linkedin-in"></i></a></li>
+        <li><a><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a><i class="fa-brands fa-instagram"></i></a></li>
+      </ul>
+      <p>Chemical Science for Students</p>
+    </footer>
+
+  </body>
+</html>
+
+
+<!-- Scripts  -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="app.js"></script>
+<script src="https://kit.fontawesome.com/60d4b70ba2.js" crossorigin="anonymous"></script>

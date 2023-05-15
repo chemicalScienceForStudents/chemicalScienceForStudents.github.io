@@ -1,0 +1,10 @@
+:root {
+    --colorClaro: #959ce8;
+    --colorOscuro: #5757ce;
+    --colorMuyOscuro: #15161c;
+    --gradiente:linear-gradient(
+      to right,
+      var(--colorMuyOscuro),
+      var(--colorClaro)
+    );
+  }

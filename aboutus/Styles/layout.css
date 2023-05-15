@@ -1,0 +1,231 @@
+@import './constants.css';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+  margin: 0;
+}
+
+/* Contenido */
+
+.navbar-margin{
+  margin-top: 5vh;
+}
+
+.row, .row-inverted {
+  display: flex;
+  flex-direction: row;
+  height: 46vh;
+  width: 100%;
+}
+
+.col, .col-parrafo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+}
+
+ul{
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.color-col {
+  /* background: var(--gradiente); */
+  background-color: #5757ce;
+}
+
+.img-col {
+  height: 100%;
+  width: 50%;
+  padding: 0;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.mision-vision {
+  font-size: 4vh;
+  padding: 3%;
+}
+
+
+
+
+
+.palabra-resaltada {
+  background: var(--gradiente);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title-row {
+  width: 100%;
+  height: 10%;
+  margin-top: 10%;
+  margin-bottom: 2%;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 5vh;
+  margin: 0;
+  font-weight: bold;
+}
+
+.row-prod1, .row-prod2{
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.col-carousel {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.col-descripcion-producto {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.parrafo {
+  font-size: 1.6vw;
+  text-align: justify;
+  padding: 0 8%;
+}
+
+
+
+.filosofia-bg {
+  margin:40px 0;
+  background: var(--colorOscuro);
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.filosofia {
+  color: white;
+  text-align: center;
+  width: 90%;
+  font-size: 1.8rem;
+}
+
+.titulo-producto {
+  font-size: 2rem;
+  margin: 0;
+  color: #5757ce;
+}
+
+.table {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  text-align: center;
+}
+
+footer{
+  text-align: center;
+  height: 20vh;
+  font-size: 3vh;
+  color: white;
+  background-color: var(--colorMuyOscuro);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+footer ul{
+  margin: 0;
+}
+
+footer ul li{
+  display: inline;
+  margin: 0 10px;
+}
+
+
+
+
+@media (max-width: 900px) {
+  .parrafo{
+    font-size: 3vh;
+  }
+
+  .row,
+  .row-prod2, .row-filos {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .row-prod1, .row-inverted{
+    flex-direction: column-reverse;
+    height: fit-content;
+  }
+
+ .row-prod2{
+    margin-top: 8%;
+  }
+
+  .title-row{
+    height: 20%;
+  }
+
+  .col,
+  .img-col,
+  .col-carousel {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .col-carousel{
+    height: fit-content;
+  }
+
+  .col-parrafo, .col-descripcion-producto{
+    height: fit-content;
+    width: 100%;
+  }
+
+  .col-descripcion-producto{
+    margin: 40px 0;
+  }
+
+  .mision-vision{
+    font-size: 3.5vh;
+  }
+
+  button{
+    width: 60%;
+  }
+
+  .filosofia{
+    font-size: 3.5vw;
+  }
+
+
+}

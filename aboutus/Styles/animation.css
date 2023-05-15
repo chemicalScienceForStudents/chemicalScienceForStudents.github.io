@@ -1,0 +1,44 @@
+.fade-in {
+    animation: fadeIn 8s;
+  }
+  
+  .fade-in-long {
+    animation: fadeIn 10s;
+  }
+  
+  .walk-in-left {
+    animation: walkInLeft 1s;
+    overflow: hidden;
+  }
+  
+  .walk-in-right {
+    animation: walkInRight 3s;
+    overflow: hidden;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes walkInLeft {
+    0% {
+      margin-right: 100%;
+    }
+    100% {
+      margin-right: 0;
+    }
+  }
+  
+  @keyframes walkInRight {
+    0% {
+      margin-left: 100%;
+    }
+    100% {
+      margin-left: 0;
+    }
+  }
