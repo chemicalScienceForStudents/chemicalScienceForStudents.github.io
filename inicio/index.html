@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CSS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal&family=Athiti:wght@500">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-6Z4I4f7V+TdvT31T/eVvmuDxjxLa7+szFGrYsIaEKsQk8sK7OTflQ+mnfh1plTKFjthtakd7V59CnPxuIXjckw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body >
+  <!-- HEADER -->
+  <div class="top-image">
+    <h1>Chemical Science for Students</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+  </div>
+  <nav class="fixed-navbar" id="nav">
+    <div id="menu" class="menu"> 
+      <a href="#">
+        <img src="img/Logo-04.png" alt="CSS" id="css-logo" > 
+      </a>
+      <input type="checkbox" id="nav-check">
+      <label for="nav-check" class="nav-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="menu-items">
+        <li><a id="first-link-nav" href="#">INICIO</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">ACERCA DE</a></li>
+        <li><a  href="#">CONTACTO</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="fennex-banner">
+    <div> 
+      <a href="#">
+        <img id="fennex-image" src="img/fennex_dummy.jpg" alt=""> 
+      </a> 
+    </div>
+    <div> 
+      <h2>Fennex</h2> 
+      <h3>Para enseñar y aprender Química Analítica</h3>
+      <button onclick="location.href='#'">
+        Iniciar graficadora
+      </button>
+    </div>
+  </div>
+  <div class="parallax" >
+    <h1 style="text-align: center;">Características</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+    <ul>
+      <li> Característica 1 </li>
+      <li> Característica 2 </li>
+      <li> Característica 3 </li>
+    </ul> 
+    <div class="left-div tag">
+      <div>
+        <h2 > Característica 1</h2>
+        <p>fade in from below</p>
+      </div>
+      <img src="img/placeholder.png" alt="tutoriales">
+    </div>
+    <div class="right-div tag">
+      <img src="img/placeholder.png" alt="recursos">
+      <div>
+        <h2>Característica 2</h2>
+        <p>fade in from below</p>
+      </div>
+    </div>
+    <div class="left-div tag">
+      <div>
+        <h2 > Característica 3</h2>
+        <p>fade in from below</p>
+      </div>
+      <img src="img/placeholder.png" alt="tutoriales">
+    </div>
+  </div>
+  <div>
+    <h1 style="margin-top: 46px;">Más información</h1>
+  </div>
+  <div class="parallax">
+    <div class="right-div tag">
+      <img src="img/placeholder.png" alt="recursos">
+      <div>
+        <h1 style="margin-left: 50%;">Recursos</h1>
+        <a href=""><p>fade in from below. Visit res</p> </a> 
+      </div>
+    </div>
+    <div class="left-div tag">
+      <div>
+        <h1 style="margin-left: 50%;">Blog</h1>
+        <a href=""><p>fade in from below. Visit blog</p> </a> 
+      </div>
+      <img src="img/placeholder.png" alt="recursos">
+    </div>
+
+    <div>
+      <h1 style="margin-left: 30%; margin-top: 15%;" >Tutoriales</h1>
+      <a href="https://www.youtube.com/@WolframResearch"> <p style="text-align: center;">fade in from below. Visit Youtube channel</p> </a>
+    </div>
+    <div class="video-carousel">
+      <div class="carousel-container">
+        <div class="carousel-slide">
+          <iframe src="https://www.youtube.com/embed/MfI1gA910Cw" ></iframe>
+        </div>
+        <div class="carousel-slide">
+          <iframe src="https://www.youtube.com/embed/DxzWqkdvVI4" ></iframe>
+        </div>
+        <div class="carousel-slide">
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" ></iframe>
+        </div>
+        <!-- Add more carousel-slide elements for additional videos -->
+      </div>
+      
+      <button class="carousel-prev"> &lsaquo; </button>
+      <button class="carousel-next ">&rsaquo;</button>
+    </div>
+  </div>
+  <h1 style="margin-top: 50px;">Otras aplicaciones</h1>
+  <!-- WIDGETS -->
+  <div class="projects" >
+    <div  > 
+      <a  href="#"> 
+        <div class="widget" >
+          <div >
+            <h2>Proyecto1</h2>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div></div>
+    <div > 
+      <a  href="">
+        <div class="widget" >
+          <div >
+            <h2>Proyecto2</h2>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div> <!-- WIDGETS -->
+
+  <footer>
+    <hr class="blue-line">
+    <div class="footer-row">
+      <div > </div>
+      <div >
+        <h3>Secciones</h3>
+        <a href=""> <h4>Inicio</h4> </a>
+        <a href="">  <h4>Blog académico</h4></a>
+        <a href="">  <h4>Acerca de</h4> </a>
+        <a href="">  <h4>Contáctanos</h4></a>
+      </div>
+      <div > </div>
+      <div>
+        <h3>Aplicaciones</h3>
+          <a href=""> <h4>Producto 1</h4></a>
+          <a href=""> <h4>Producto 2</h4> </a>
+      </div>
+    </div>
+    <div class="social"> 
+      <!-- Facebook icon -->
+      <a href="https://www.facebook.com/" >
+        <i class="fab fa-facebook fa-xl"></i>
+      </a>
+
+      <!-- Twitter icon -->
+      <a href="https://twitter.com/">
+        <i class="fab fa-twitter fa-xl"></i>
+      </a>
+
+      <!-- Instagram icon -->
+      <a href="https://www.instagram.com/">
+        <i class="fab fa-instagram fa-xl"></i>
+      </a>
+    </div>
+  </footer>
+    
+</body>
+
+<script src="js/main.js"></script>
+<script src="https://kit.fontawesome.com/620797aa98.js" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,561 @@
+h1{
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    /* or 50px */
+    color: #FFFFFF;
+    text-align: left;
+    margin-left: 40px;
+}
+
+a{
+    text-decoration:none;
+    color: #ddd;
+}
+
+body{
+    margin: 0; /* leave no blank spaces */
+    background-color: #15161c;
+}
+
+/*HEADER*/
+.fixed-navbar { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky; 
+    top: 0; 
+    left: 0; 
+    z-index: 999; 
+    width: 100%; 
+    height: 70px; 
+    background-color: transparent; 
+    transition: background-color 500ms linear;
+}
+
+.fixed-navbar li, .fixed-navbar a { 
+    height: 40px;
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    vertical-align: super;
+}
+
+.nav-btn {
+    display: none;
+}
+
+#nav-check{
+    display: none;
+}
+
+.menu {
+    width: 100%;
+    position: relative;
+    height: 70px;
+    align-content: center;
+}
+.menu img{
+    height: 50px;
+    margin-left: 70px;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+.menu a {
+    color: #fff;
+}
+
+.menu-items {
+    display: inline;
+    height: 70px;
+    margin: 0;
+	padding: 0; 
+}
+
+.menu-items li{
+    display: inline;
+    margin-right: 2.25%;
+    margin-left: 2.25%;
+    right: 12%;
+}
+.menu-items a {
+    text-decoration: none;
+    margin-bottom: 24px;
+}
+#first-link-nav{
+    margin-left: 12%;
+}
+
+.menu-items a:hover{
+    color: #ddd;
+    text-decoration: underline;
+    text-decoration-color: #fff;
+    text-decoration-thickness: 2px;
+}
+
+.bg-nav {
+    background: #5757ce !important;
+    transition: 300ms;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/*HEADER*/
+
+.top-image {
+    text-align: left;
+    overflow: hidden;
+    height: 75vh;
+    width: 100%;
+    background: linear-gradient(to left bottom, #959ce8, #858be2 , #757adc, #6668d5, #5757ce, 97%, #333 101%);
+    display: inline-flex;
+}
+
+/*.top-image img {
+    transition: transform 1.8s ease-in-out; 
+    width: 100%;
+}
+
+.top-image img:hover{
+    transform: scale(1.2) rotate(-2deg) ;
+}*/
+
+.top-image h1{
+    position: relative;
+    top: 16px;
+    left: 64px;
+    width: 25%;
+    z-index: 1;
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 150%;
+    color: #444;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.top-image p{
+    position: relative;
+    font-family: Tajawal;
+    width: 50%;
+    top: 75%;
+    left: 16%;
+    text-align: end;
+}
+
+.fennex-banner {
+    overflow: hidden;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.fennex-banner img {
+    filter: blur(1px);
+    height: 524px;
+    width: 100%;
+    transition: transform .2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    margin-top: 1px;
+}
+
+.fennex-banner h2{
+    display: inline;
+    margin-top: 30px;
+    margin-left: 10%;
+    z-index: 1;
+    font-family: Athiti;
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 200%;
+    color: #eee;
+}
+
+.fennex-banner h3{
+    margin-left: 10%;
+    display: block;
+    font-family: Tajawal;
+    font-size: 30px;
+    line-height: 125%;
+    color: #eee;
+}
+
+.fennex-banner button{ 
+    display: block;
+    background-color: #ddd;
+    border-color: #5757ce;
+    color: #5757ce;
+    margin: 25% 33% ;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 20px;
+    font-family: Tajawal;
+    cursor: pointer;
+}
+
+.parallax {
+	background-image: url('../img/placeholder.png');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+    margin-top: -4px;
+    margin-bottom: 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #fff;
+	text-shadow: 2px 2px #333;  
+}
+
+.parallax h1{
+    font-weight: 900;
+    margin: 45px 45px 0 45px;
+}
+
+.parallax h2{
+    font-size: 32px;
+    font-family: Tajawal;
+    font-weight: 900;
+    margin: 40px 30px;
+}
+
+.parallax p{
+    font-family: Tajawal;
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 90%;
+}
+
+.parallax ul{
+    width: 90%;
+    overflow: hidden;
+}
+
+.parallax li{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    margin: 20px 16%;
+    text-align: center;
+}
+
+.features {
+    align-items: center;
+	text-align:justify ;
+}
+ 
+/* Style for the two divs */
+.left-div {
+    position: relative;
+    opacity: 0;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.right-div{
+    position: relative;
+    opacity: 0;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: end;
+}
+
+.video-carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    padding-bottom: 44px;
+  }
+  
+  .carousel-container {
+    margin: 1%;
+    display: flex;
+    width: 98%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousel-slide {
+    flex: 0 0 100%;
+    width: 98%;
+  }
+  
+  .carousel-slide iframe {
+    width: 98%;
+    height: 400px; /* Adjust the height as needed */
+  }
+  
+  .carousel-prev,
+  .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 15px 10px 15px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .carousel-prev {
+    left: 1.5%;
+  }
+  
+  .carousel-next {
+    right: 3%;
+  }
+  
+.tag {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 0.63s;
+}
+  
+.tag.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    overflow: hidden;
+    overflow-y: hidden;
+    margin-left: 80px; 
+    margin-right: 80px;
+    margin-bottom: 90px;
+}
+
+.widget{
+    height: 326px;
+    margin-top: 8px;
+    position: relative;
+    transition: transform 0.3s;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000000 100%), url(../img/placeholder.png);
+    background-size: cover;
+}
+
+.widget:hover{
+    transform: scale(1.2);
+}
+
+.widget h2{
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 125%;
+    /* or 45px */
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+/* FOOTER*/
+footer{
+    background-color: #15161c;
+    height: 320px;
+}
+
+footer h3{
+    font-family: Tajawal;
+    font-size: 21px;
+    font-weight: 900;
+    line-height: 60%;
+    color: #959ce8;
+}
+
+footer h4{
+    color: #ccc;
+    font-family: Tajawal;
+}
+
+.blue-line{
+    border-top: 5px;
+    background-color: #959ce8;
+    height: 1px;
+    width: 99%;
+}
+
+.footer-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.footer-row img{
+    width: 60%;
+    height: 120px;
+    margin-top: 32px;
+    margin-left: 32px;
+    align-self: center;
+}
+
+.social{
+    display: inline-block; 
+    margin-left: 80% ;
+}
+
+.social a{
+    margin-right: 24px;
+}
+
+/* RESPONSIVENESS*/
+@media screen and (max-width: 991px) {
+    .fixed-navbar{
+        display: flex;
+        background-color: #5757ce;
+    }
+
+    #css-logo{
+        margin-left: 5%
+    }
+
+    .nav-btn {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        left: 85%;
+        top: 20px;
+        z-index: 2;
+        padding: 8px;
+        border-radius: 18%;
+    }
+
+    .nav-btn span {
+        background: #3a3a3a;
+        display: block;
+        height: 3px;
+        margin: 4px 0;
+        transition: all 0.3s ease-in-out;
+        width: 29px;
+    }
+
+    .nav-btn span:nth-child(1) {
+      transform: translateY(-6px);
+    }
+
+    .nav-btn span:nth-child(3) {
+        transform: translateY(6px);
+    }
+
+    #nav-check:checked ~ .nav-btn{
+        background-color: #5757ce;
+    }
+
+    #nav-check:checked ~ .menu-items {
+        display: block;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: radial-gradient(at top left, #5757ce 68%, #757adc,#858be2, #959ce8 );
+        /*background: linear-gradient(to top, #959ce8, #5757ce);*/
+        z-index: 1;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        height:min-content;
+    }
+
+    #nav-check:not(:checked) ~ .menu-items {
+        display: none;
+    }
+
+    #first-link-nav{
+        margin-left: 0;
+        padding-top: 56px;
+    }
+
+    .menu-items li {
+      display: block;
+      top: 24px;
+      text-align: left;
+      margin-left: 24px;
+      padding: 8px 0;
+    }
+
+    .top-image h1{
+        position: absolute;
+        top: 119px;
+        left: 30px;
+        width: 65%;
+        z-index: 1;
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 100%;
+        color: #444;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .top-image p{
+        text-align: left;
+        left: 50px;
+        width: 85%;
+    }
+
+    .fennex-banner{
+        display: flex;
+        flex-direction: column;
+        margin-top: -4px;
+        padding-bottom: 24px;
+        align-items: center;
+    }
+
+    .fennex-banner img{
+        height: 420px
+    }
+
+
+    .fennex-banner h2{
+        line-height: 125%;
+    }
+
+    .fennex-banner button{
+        margin: 0 0 5% 5%;
+        transform: scale(0.8);
+    }
+
+    .right-div{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .left-div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .widget{
+        height: 160px;
+        margin-top: 8px;
+        position: relative;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000000 100%), url(../img/placeholder.png);
+        background-size: cover;
+    }
+
+    .footer-row div{
+        margin: 8px;
+    }
+
+    .social{
+        align-content: left;
+        margin-left: 55%;
+    }
+
+}
