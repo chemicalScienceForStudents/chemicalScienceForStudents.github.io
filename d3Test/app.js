@@ -3,7 +3,6 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
-        message: 'Hello Vue!',
         isMobile:/Mobile/.test(navigator.userAgent),
         titulationVariables:{
             initialVol:25,
@@ -87,16 +86,13 @@ const { createApp } = Vue
             let maxNumberPoints = (equivalencePointVolume*2)/addedVol
             
             // Get maximum number of points with total volume added (infinity points)
-            let maxNumberPoints2 = (totalVolAdded*2)/addedVol
-
-            // Get maximum number of points with quadruple volumen equivalence 
-            let maxNumberPoints3 = (equivalencePointVolume*4)/addedVol            
+            let maxNumberPoints2 = (totalVolAdded*2)/addedVol       
 
             // Define array for tritant volume addition and pH value 
             let volumeTritant=[]
             let pH=[]
             
-            for (let i = 0; i <= parseInt(maxNumberPoints); i++) {
+            for (let i = 0; i <= parseInt(maxNumberPoints2); i++) {
                 // Get addded tritant volume
                 let volumeAdded = addedVol*i
                 // Add adition in array 
