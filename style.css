@@ -70,6 +70,7 @@ section.overflow{
 
 .logo{
     height: 35px;
+    width: auto;
 }
 
 .logo-container:hover{
