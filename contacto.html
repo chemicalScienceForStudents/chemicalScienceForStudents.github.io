@@ -1,68 +1,69 @@
 <!DOCTYPE html>
     <head>
     <!-- Meta information -->
-    <title>CSS</title>
+    <title>CSS Contacto</title>
     <meta charset="UTF-8">
-    <meta name="author" content="cssTeam">
-    <meta name="description" content="Join to Chemical Science for Students">
+    <meta name="author" content="Equipo CSS">
+    <meta name="description" content="¿Te interesa el proyecto CSS? ¡Contáctanos! Respondemos dudas y atendemos sugerencias.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#001533"/>
     <link rel="icon" href="./media/icon.ico" > 
     <!-- prefetch images for expeciences -->
-    <link rel="prefetch" href="./media/fondoCSSlow.png" >
+    <link rel="prefetch" href="./media/Logo.webp" >
+    <link rel="prefetch" href="./media/CSSbackground.webp" >
     <!-- load styles and inmediate resources -->
     <link type="text/css" rel="stylesheet" href="./style.css">   
     <!-- Preconnet files -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap" rel="stylesheet">
     </head>
 
     <body>
- 
         <nav class="navbar-container flex-container">
-            <a href="./index.html" class="logo-container"><img src="./media/Logo.svg" class="logo"></a>
-        
+            <a href="./index.html" class="logo-container"><img src="./media/Logo.webp" class="logo"></a>
             <ul class="flex-container overflow">
                 <li class="section-link"><a class="link" href="./index.html">INICIO</a></li>
                 <li class="section-link"><a class="link" href="./quienesSomos.html">QUIÉNES SOMOS</a></li>
                 <li class="section-link"><a class="link" href="./uneteANosotros.html">ÚNETE A CSS</a></li>
                 <li class="section-link"><a class="link current-section" href="#">CONTACTO</a></li>
             </ul>
-            
         </nav> 
 
-        <main class="main-container">
+        <main class="main-container flex-container flex-column">
 
-            <h1 class="title-eslogan">Comunicate con nosotros</h1>
-            <br>
+            <section>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1 class="title-eslogan fluid-font-title">Comunicate con nosotros</h1>
+                <br>
+                <h3 class="title-products fluid-font-paragraph">!QUEREMOS ESCUCHARTE!</h3>
+                <p class="fluid-font-paragraph">Escribe el asunto y el contenido de tus dudas y nuestro equipo se comunicará contigo a la brevedad.</p>
+                <section>
+                    <label class="fluid-font-paragraph color-white">Correo:&nbsp;</label>
+                    <input id="contactEmail" type="text" class="contact-input fluid-font-paragraph transition" placeholder="ejemplo@hotmail.com" >
+                </section>
+                <br/>
+                <section>
+                    <label class="fluid-font-paragraph color-white">Asunto:&nbsp;</label>
+                    <input id="businessEmail" type="text" class="contact-input fluid-font-paragraph transition" placeholder="Ej. Informes de vacante" >
+                </section> 
+                <br/>
+                <textarea id="emailContent" class="contact-textarea fluid-font-paragraph scrollbar blue-scrollbar transition" name="emailContent" placeholder="Escribe tu mensaje ..." ></textarea>
+                <br/><br/>
+                <button type="button" class="contact-button fluid-font-paragraph" onclick="sendEmail()">Enviar</button>
+                <br/>
+                <br>
 
-            <h3 class="title-products">!QUEREMOS ESCUCHARTE!</h3>
-            
-            <p>Escribe el asunto y el contenido de tus dudas y nuestro equipo se comunicará contigo a la brevedad.</p>
 
-            <div>
-                <label class="fluid-font-paragraph color-white">Correo:&nbsp;</label>
-                <input id="contactEmail" type="text" class="form-input fluid-font-paragraph transition" placeholder="ejemplo@hotmail.com" >
-            </div>
-            <br/>
-            <div>
-                <label class="fluid-font-paragraph color-white">Asunto:&nbsp;</label>
-                <input id="businessEmail" type="text" class="form-input fluid-font-paragraph transition" placeholder="Ej. Informes de vacante" >
-            </div> 
-            <br/>
-            <textarea id="emailContent" class="fluid-font-paragraph scrollbar blue-scrollbar transition" name="emailContent" placeholder="Escribe tu mensaje ..." ></textarea>
-            <br/>
-            <button type="button" class="contact-button fluid-font-paragraph" onclick="sendEmail()">Enviar</button>
-            
-            <br/>
-            <br>
+            </section>
+
             <footer>copyright @ Chemical Science for Students 2023</footer>
 
         </main>
-
     </body>
 
     <script type="text/javascript" src="./app.js"></script>
-
 
 </html>

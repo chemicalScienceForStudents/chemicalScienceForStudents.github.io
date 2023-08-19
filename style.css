@@ -1,13 +1,25 @@
-/*colors*/
-
+/*******************/
+/* Root variables */
+/*****************/
 :root{
+     /* Colors*/
     --black-russian: #001533;
     --portage: #959CE8;
+
+    /* Title font size */
+    --max-big-title-size:80px;
+    --min-big-title-size:30px;
+    --max-title-size:50px;
+    --min-title-size:30px;
+    --min-paragraph-size: 20px;
+    --max-paragraph-size: 30px;
+    --min-small-paragraph-size: 15px;
+    --max-small-paragraph-size: 20px;
 }
 
+/************/
+/* General */
 /**********/
-/*General*/
-/********/
 
 html {
     color: white;
@@ -47,17 +59,9 @@ section.overflow{
     align-items: center;
 }
 
-.display-in-mobile{
-    display: none;
-}
-
-.display-in-desktop{
-    display: block;
-}
-
+/***********/
+/* Navbar */
 /*********/
-/*Navbar*/
-/*******/
 
 .logo-container{
     padding: 10px;
@@ -97,8 +101,9 @@ nav ul{
 .link{
     padding: 10px;
     white-space: nowrap;
-    font-weight: 700;
+    font-weight: 400;
     display: block;
+    font-size: 20px;
 }
 
 .link:hover{
@@ -108,29 +113,29 @@ nav ul{
 }
 
 
+
+
+/*****************/
+/* Main content */
 /***************/
-/*Main content*/
-/*************/
 
 .main-container{
-    padding: 20px;
-    background-image: url(./media/fondoCSSlow.png);
-    background-size: 150%;
+    padding: 25px 10vw;
+    background-image: url(./media/CSSbackground.webp);
     background-position: 0;
     animation-name: background-animation;
     animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    height: calc(100vh - 90px);
+    background-size: auto 100vh;
+    height: calc(100vh - 100px);
     overflow: hidden auto;
-    background-size: 150%;
 }
 
 .flex-column{
     flex-direction: column;
     justify-content: space-evenly;
 }
-
 
 @keyframes background-animation{
     0%{
@@ -142,46 +147,50 @@ nav ul{
     0%{
         background-position: 0;
     }
-
 }
 
 .title-css{
-    font-size: 90px;
     font-weight: 500;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -1px 10px rgba(0, 0, 0, 0.3);
 }
 
 .title-eslogan{
-    font-size: 50px;
     font-weight: 400;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .title-products{
     color: var(--portage);
-    font-weight: 700;
-    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+}
+
+figure{
+    margin: 15px;
 }
 
 figure:hover > img{
     transition-duration: 0.35s;
     transition-timing-function: ease-in-out;
     transform: scale(1.1);
-    box-shadow: 0 0 5px white;
+    box-shadow: 1px 2px 0 rgba(255, 255, 255, 0.3), 0 1px 3px 1px rgba(221, 240, 255, 0.15);
 }
 
 .img-product{
-    height: 100px;
-    width: 100px;
-    border-radius: 35px;
-    border:2px solid white;
+    height: 150px;
+    width: 150px;
+    border-radius: 32px;
+    box-shadow: 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
 }
 
 .img-capture{
-    padding: 5px 0;
-    font-size: 20px;
     font-weight: 300;
+    padding: 5px 0;
+    text-align: center ;
     white-space: nowrap;
 }
-
 
 ::-webkit-scrollbar{
     height: 3px;
@@ -199,41 +208,11 @@ figure:hover > img{
   border-radius: 10px;
 }
 
+/*************/
+/* Contacto */
+/***********/
 
-
-/*Mobile media queries*/
-
-
-@media (max-width: 414px) and (max-height: 916px) {
-
-    .display-in-mobile{
-        display: block;
-    }
-    
-    .display-in-desktop{
-        display: none;
-    }
-
-    .main-container{
-        background-size: auto 100vh;
-    }
-
-}
-
-@media (max-width: 916px) and (max-height: 414px) and (orientation:landscape) {
-
-    .flex-column{
-        justify-content:flex-start;
-    }
-   
-
-}
-
-label{
-    font-size: 20px;
-}
-
-input{
+.contact-input{
     border: 3px solid transparent;
     border-radius: 15px;
     margin: 5px;
@@ -242,12 +221,10 @@ input{
     text-align: center;
     transition-duration: .35s;
     font-family: 'Tajawal', sans-serif;
-    font-size: 20px;
     width: 50vw;
 }
 
-textarea{
-    font-size: 20px;
+.contact-textarea{
     outline: none;
     resize: none;
     overflow-y: auto;
@@ -256,24 +233,142 @@ textarea{
     padding: 10px 5px;
     border: 3px solid transparent;
     box-sizing: border-box;
-    width: 60vw;
+    width: 80vw;
     font-family: 'Tajawal', sans-serif; 
 }
 
-button {
+.contact-button {
     background-color: var(--black-russian);
-    border-radius: 25px;
-    border: 2px solid var(--portage);
+    border-radius: 30px;
+    border: 1px solid var(--portage);
     color: var(--midnight-blue);
     margin: auto;
-    padding: 15px 25px;
+    padding: 10px 20px;
     cursor: pointer;
     display: block;
     outline: none;
     transition-duration: 0.35s;
 }
 
-button:hover{
+.contact-button:hover{
     transition-timing-function: ease-in-out;
     box-shadow:1px 1px 10px 1px gray;
 }
+
+/**********************/
+/***Responsive Font***/
+/********************/
+
+.fluid-font-big-title{
+    font-size: var(--min-big-title-size);
+}
+
+.fluid-font-title{
+    font-size: var(--min-title-size);
+}
+  
+.fluid-font-paragraph{
+    font-size: var(--min-paragraph-size);
+}
+
+.fluid-font-small-paragraph{
+    font-size: var(--min-small-paragraph-size);
+}
+
+/* sintax  linear responsive text [min font size + (max font size - min font size) * ((viewport width - min viewport width) / (max viewport width - min viewport width))] */
+/* Scren with a width equal or bigger than 320px  */
+@media screen and (min-width: 320px) {
+
+    .fluid-font-big-title{
+        font-size: calc(var(--min-big-title-size) + 50 * ((100vw - 320px) / 1600)) ;
+    }
+   
+    .fluid-font-title{
+        font-size: calc(var(--min-title-size) + 20 * ((100vw - 320px) / 1600)) ;
+    }
+  
+    .fluid-font-paragraph{
+      font-size: calc(var(--min-paragraph-size) + 10 * ((100vw - 320px) / 1600)) ;
+    }
+
+    .fluid-font-small-paragraph{
+        font-size: calc(var(--min-small-paragraph-size) + 5 * ((100vw - 320px) / 1600)) ;
+    }
+
+}
+
+/* Scren with a width equal or bigger than 1920px  */
+@media screen and (min-width: 1920px) {
+
+    .fluid-font-big-title{
+        font-size: var(--max-big-title-size) ;
+    }
+
+    .fluid-font-title{
+      font-size: var(--max-title-size);
+    }
+  
+    .fluid-font-paragraph{
+      font-size: var(--max-paragraph-size);
+    }
+
+    .fluid-font-small-paragraph{
+        font-size: var(--max-small-paragraph-size);
+      }
+}
+
+/******************/
+/* DESKTOP STYLE */
+/****************/
+
+/***********************************/
+/* Desktop and tablet (landscape) */
+/*********************************/
+
+/*********************/
+/* Only break point */
+/*******************/
+/* 
+ --------------------------  Explication -> ipad resolution is 768 x 1024px in vertical postion
+ |                        |                 is considered as a smartphone, but in 1024 x 768px 
+ |                        |                 is considered as a computer, this break point consider
+ |     916 x 412 px       |                 that only exist two design mobile or desktop,the bigger
+ |                        |                 resolution in phone founded was 411 x 812px, so we take
+ |                        |                 the limit values of resolution as following: width:768+1px
+ --------------------------                 and height:411+1px up this are computer down this are a phone
+*/
+
+@media (min-height:412px) and (min-width: 916px) {
+  
+    /***********/
+    /* Inicio */
+    /*********/
+
+    .main-container{
+        height: calc(100vh - 100px);
+        background-size: 150%;
+    }
+
+    /*************/
+    /* Contacto */
+    /***********/
+    .contact-textarea{
+        width: 60vw;
+    }
+    
+}
+
+/***********************/
+/* Mobile (landscape) */
+/*********************/
+
+/*** Only works for mobiles in landscape with resulution of height : 412 px with width: > 412 px ***/
+
+@media (max-height:425px) and (orientation:landscape){
+    .main-container{
+        height: auto;
+        background-size: cover;
+    }
+
+}
+
